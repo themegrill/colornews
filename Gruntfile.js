@@ -20,11 +20,11 @@ module.exports = function( grunt ){
             '<%= dirs.js %>/*.js',
             '!<%= dirs.js %>/*.min.js',
             '!<%= dirs.js %>/fitvids/jquery.fitvids.js',
+            '!<%= dirs.js %>/jquery.bxslider/jquery.bxslider.js',
             '!<%= dirs.js %>/magnific-popup/jquery.magnific-popup.js',
-            '!<%= dirs.js %>/news-ticker/jquery.newsTicker.js',
             '!<%= dirs.js %>/sticky/jquery.sticky.js',
+            '!<%= dirs.js %>/tickerme/tickerme.js',
             '!<%= dirs.js %>/html5shiv.js',
-            '!<%= dirs.js %>/jquery.bxslider.js',
             '!<%= dirs.js %>/image-uploader.js'
 			]
 		},

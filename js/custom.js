@@ -1,10 +1,10 @@
 jQuery(document).ready(function() {
-   jQuery(".search-icon").click(function() {
-      jQuery(".search-box").toggleClass('active');
+   jQuery('.search-icon').click(function() {
+      jQuery('.search-box').toggleClass('active');
    });
 
-   jQuery(".close").click(function() {
-      jQuery(".search-box").removeClass('active');
+   jQuery('.close').click(function() {
+      jQuery('.search-box').removeClass('active');
    });
 
    /******** bx-slider ***********/
@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
       maxSlides: 8,
       slideWidth: 133,
       slideMargin: 7,
-      pager:false,
+      pager:false
    });
 
    jQuery('.category-toggle-block').click(function() {
@@ -38,7 +38,7 @@ jQuery(document).ready(function() {
    });
 
    // scroll up setting
-   jQuery("#scroll-up").hide();
+   jQuery('#scroll-up').hide();
    jQuery(function () {
       jQuery(window).scroll(function () {
          if (jQuery(this).scrollTop() > 800) {
@@ -56,6 +56,6 @@ jQuery(document).ready(function() {
    });
 
    /* FitVids Setting */
-   jQuery(".fitvids-video").fitVids();
+   jQuery('.fitvids-video').fitVids();
 
 });

@@ -1,24 +1,21 @@
-# ColorNews WordPress Theme. Translation template file.
-# This file is distributed under the same license as the ColorMag Theme.
+# Copyright (C) 2016 ThemeGrill
+# This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: ColorNews\n"
-"POT-Creation-Date: 2015-08-07 10:59+0545\n"
-"PO-Revision-Date: 2015-08-07 11:00+0545\n"
-"Last-Translator: \n"
-"Language-Team: ThemeGrill <themegrill@gmail.com>\n"
-"Language: en\n"
+"Project-Id-Version: ColorNews 1.0.6\n"
+"Report-Msgid-Bugs-To: themegrill@gmail.com\n"
+"POT-Creation-Date: 2016-05-02 11:40:16+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: 404.php:32
+msgid "404"
+msgstr ""
 
 #: 404.php:25
 msgid "Oops! That page can&rsquo;t be found."
@@ -30,21 +27,9 @@ msgid ""
 "instead."
 msgstr ""
 
-#: 404.php:32
-msgid "404"
-msgstr ""
-
 #: 404.php:34
 msgid "error"
 msgstr ""
-
-#: comments.php:31
-#, php-format
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
 
 #: comments.php:40 comments.php:62
 msgid "Comment navigation"
@@ -62,15 +47,15 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
-#: functions.php:67
+#: functions.php:87
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:68
+#: functions.php:88
 msgid "Social Menu"
 msgstr ""
 
-#: functions.php:69
+#: functions.php:89
 msgid "Category Menu"
 msgstr ""
 
@@ -78,11 +63,11 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:108
+#: header.php:120
 msgid "Menu"
 msgstr ""
 
-#: header.php:119
+#: header.php:131
 msgid "&times;"
 msgstr ""
 
@@ -111,7 +96,7 @@ msgid "No Sidebar Content Centered"
 msgstr ""
 
 #: inc/customizer.php:39
-msgid "Documentation"
+msgid "Theme Info"
 msgstr ""
 
 #: inc/customizer.php:43
@@ -119,289 +104,290 @@ msgid "Support"
 msgstr ""
 
 #: inc/customizer.php:47
-msgid "View Demo"
+msgid "Documentation"
 msgstr ""
 
 #: inc/customizer.php:51
-msgid "Rate This Theme"
+msgid "View Demo"
 msgstr ""
 
-#: inc/customizer.php:63
-msgid "ColorNews Theme Important Links"
+#: inc/customizer.php:55
+msgid "Rate this theme"
 msgstr ""
 
-#: inc/customizer.php:75
+#: inc/customizer.php:67
+msgid "ColorNews Important Links"
+msgstr ""
+
+#: inc/customizer.php:79
 msgid "Important Links"
 msgstr ""
 
-#: inc/customizer.php:84
+#: inc/customizer.php:88
 msgid "Change the Header Settings from here as you want."
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:90
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:92
+#: inc/customizer.php:96
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:103
+#: inc/customizer.php:107
 msgid "Upload logo for your header here."
 msgstr ""
 
-#: inc/customizer.php:116
+#: inc/customizer.php:120
 msgid "Choose the option that you want from below."
 msgstr ""
 
-#: inc/customizer.php:119
+#: inc/customizer.php:123
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:120
+#: inc/customizer.php:124
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:125
 msgid "Show Both"
 msgstr ""
 
-#: inc/customizer.php:122
+#: inc/customizer.php:126
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:132
 msgid "Show Home Icon"
 msgstr ""
 
-#: inc/customizer.php:141
+#: inc/customizer.php:145
 msgid "Check to enable the home icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:148
+#: inc/customizer.php:152
 msgid "Show Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:161
+#: inc/customizer.php:165
 msgid ""
 "Check to enable the header top bar. The top header bar includes category "
 "menu, date display and social menu ."
 msgstr ""
 
-#: inc/customizer.php:175
+#: inc/customizer.php:179
 msgid "Check to enable the category menu in the top header bar."
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:186
 msgid "Show Date"
 msgstr ""
 
-#: inc/customizer.php:195
+#: inc/customizer.php:199
 msgid "Check to show the date in header."
 msgstr ""
 
-#: inc/customizer.php:202
+#: inc/customizer.php:206
 msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer.php:215
+#: inc/customizer.php:219
 msgid "Check to display the Search Icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:222
+#: inc/customizer.php:226
 msgid "Random Post"
 msgstr ""
 
-#: inc/customizer.php:235
+#: inc/customizer.php:239
 msgid "Check to display the Random Post Icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:242
+#: inc/customizer.php:246
 msgid "Breaking News"
 msgstr ""
 
-#: inc/customizer.php:255
+#: inc/customizer.php:259
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:262
+#: inc/customizer.php:266
 msgid "Sticky Menu"
 msgstr ""
 
-#: inc/customizer.php:275
+#: inc/customizer.php:279
 msgid "Check to enable the sticky behavior of the primary menu."
 msgstr ""
 
-#: inc/customizer.php:283
+#: inc/customizer.php:287
 msgid "Header Image Position"
 msgstr ""
 
-#: inc/customizer.php:295
+#: inc/customizer.php:299
 msgid "Header image display position."
 msgstr ""
 
-#: inc/customizer.php:298
+#: inc/customizer.php:302
 msgid "Display the Header image just above the site title/text."
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:303
 msgid ""
-"Default: Display the Header image between site title/text and the main/"
-"primary menu."
+"Default: Display the Header image between site title/text and the "
+"main/primary menu."
 msgstr ""
 
-#: inc/customizer.php:300
+#: inc/customizer.php:304
 msgid "Display the Header image below main/primary menu."
 msgstr ""
 
-#: inc/customizer.php:312
+#: inc/customizer.php:316
 msgid "Check to make header image link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:320
+#: inc/customizer.php:324
 msgid "Change the Design Settings from here as you want for your site."
 msgstr ""
 
-#: inc/customizer.php:322
+#: inc/customizer.php:326
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:332
 msgid "Front Page Settings"
 msgstr ""
 
-#: inc/customizer.php:339
+#: inc/customizer.php:343
 msgid "Check to hide blog posts/static page on the front page."
 msgstr ""
 
-#: inc/customizer.php:346
+#: inc/customizer.php:350
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:358
+#: inc/customizer.php:362
 msgid ""
 "Choose the required layout for your site. The change is reflected in the "
 "whole site"
 msgstr ""
 
-#: inc/customizer.php:360
+#: inc/customizer.php:364
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer.php:361
+#: inc/customizer.php:365
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:429
+#: inc/customizer.php:433
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:441
+#: inc/customizer.php:445
 msgid ""
-"Select default layout. This layout will be reflected in whole site archives, "
-"categories, search page etc. The layout for a single post and page can be "
-"controlled from below options."
+"Select default layout. This layout will be reflected in whole site "
+"archives, categories, search page etc. The layout for a single post and "
+"page can be controlled from below options."
 msgstr ""
 
-#: inc/customizer.php:455
+#: inc/customizer.php:459
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:467
+#: inc/customizer.php:471
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/customizer.php:481
+#: inc/customizer.php:485
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:493
+#: inc/customizer.php:497
 msgid ""
-"Select default layout for single posts. This layout will be reflected in all "
-"single posts unless unique layout is set for specific post."
+"Select default layout for single posts. This layout will be reflected in "
+"all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:508
+#: inc/customizer.php:512
 msgid "Primary color option"
 msgstr ""
 
-#: inc/customizer.php:519
+#: inc/customizer.php:523
 msgid ""
 "This will reflect in links and many others. Choose a color to match your "
 "site."
 msgstr ""
 
-#: inc/customizer.php:542
+#: inc/customizer.php:546
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:554
+#: inc/customizer.php:558
 msgid "Write your custom css here and design live."
 msgstr ""
 
-#: inc/customizer.php:563
+#: inc/customizer.php:567
 msgid "Change the Additional Settings from here as you want."
 msgstr ""
 
-#: inc/customizer.php:565
+#: inc/customizer.php:569
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:571
+#: inc/customizer.php:575
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:583
+#: inc/customizer.php:587
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:596
+#: inc/customizer.php:600
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:600
+#: inc/customizer.php:604
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:601
+#: inc/customizer.php:605
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:608
+#: inc/customizer.php:612
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:620
+#: inc/customizer.php:624
 msgid "Check to enable the lightbox for the featured images in single post."
 msgstr ""
 
-#: inc/customizer.php:629
+#: inc/customizer.php:633
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:631
+#: inc/customizer.php:635
 msgid "Change the color of each category items as you want for your site."
 msgstr ""
 
-#: inc/customizer.php:636
+#: inc/customizer.php:640
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:658 inc/template-tags.php:83
-#, php-format
+#: inc/customizer.php:662 inc/template-tags.php:91
 msgid "%s"
 msgstr ""
 
-#: inc/extras.php:54
-#, php-format
-msgid "Page %s"
+#: inc/customizer.php:722
+msgid "View PRO version"
 msgstr ""
 
-#: inc/functions.php:28
-msgctxt "Roboto font: on or off"
-msgid "on"
+#: inc/extras.php:54
+msgid "Page %s"
 msgstr ""
 
 #: inc/functions.php:314
@@ -416,22 +402,19 @@ msgstr ""
 msgid "WordPress"
 msgstr ""
 
-#: inc/functions.php:408
+#. Author of the plugin/theme
 msgid "ThemeGrill"
 msgstr ""
 
 #: inc/functions.php:410
-#, php-format
 msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
 #: inc/functions.php:410
-#, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 #: inc/functions.php:410
-#, php-format
 msgid "Powered by %s."
 msgstr ""
 
@@ -448,7 +431,6 @@ msgid "Post author"
 msgstr ""
 
 #: inc/functions.php:554
-#, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
@@ -480,142 +462,73 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: inc/functions.php:597 template-parts/content-page.php:30
+#: inc/functions.php:597 template-parts/content-page.php:34
 msgid "Edit"
 msgstr ""
 
 #: inc/functions.php:622
-#, php-format
 msgid ""
-"<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\">"
-"%3$s</a></span>"
+"<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\">%3$s</a></span>"
 msgstr ""
 
 #: inc/related-posts.php:8
 msgid "You May Also Like"
 msgstr ""
 
-#: inc/related-posts.php:38 inc/widgets/widgets.php:696
-#: inc/widgets/widgets.php:847 inc/widgets/widgets.php:1208
-#, php-format
+#: inc/related-posts.php:38 inc/widgets/widgets.php:697
+#: inc/widgets/widgets.php:848 inc/widgets/widgets.php:1209
 msgid ""
-"<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark"
-"\"><i class=\"fa fa-calendar-o\"></i> %3$s</a></span>"
+"<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" "
+"rel=\"bookmark\"><i class=\"fa fa-calendar-o\"></i> %3$s</a></span>"
 msgstr ""
 
-#: inc/template-tags.php:25
+#: inc/template-tags.php:32
 msgid "Posts navigation"
 msgstr ""
 
-#: inc/template-tags.php:29
+#: inc/template-tags.php:36
 msgid "Older posts"
 msgstr ""
 
-#: inc/template-tags.php:33
+#: inc/template-tags.php:40
 msgid "Newer posts"
 msgstr ""
 
-#: inc/template-tags.php:58
+#: inc/template-tags.php:66
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:86
-#, php-format
+#: inc/template-tags.php:94
 msgid "Tag: %s"
 msgstr ""
 
-#: inc/template-tags.php:88
-#, php-format
+#: inc/template-tags.php:96
 msgid "Author: %s"
 msgstr ""
 
-#: inc/template-tags.php:90
-#, php-format
+#: inc/template-tags.php:98
 msgid "Year: %s"
 msgstr ""
 
-#: inc/template-tags.php:90
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: inc/template-tags.php:92
-#, php-format
+#: inc/template-tags.php:100
 msgid "Month: %s"
 msgstr ""
 
-#: inc/template-tags.php:92
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: inc/template-tags.php:94
-#, php-format
+#: inc/template-tags.php:102
 msgid "Day: %s"
 msgstr ""
 
-#: inc/template-tags.php:94
-msgctxt "daily archives date format"
-msgid "F j, Y"
-msgstr ""
-
-#: inc/template-tags.php:97
-msgctxt "post format archive title"
-msgid "Asides"
-msgstr ""
-
-#: inc/template-tags.php:99
-msgctxt "post format archive title"
-msgid "Galleries"
-msgstr ""
-
-#: inc/template-tags.php:101
-msgctxt "post format archive title"
-msgid "Images"
-msgstr ""
-
-#: inc/template-tags.php:103
-msgctxt "post format archive title"
-msgid "Videos"
-msgstr ""
-
-#: inc/template-tags.php:105
-msgctxt "post format archive title"
-msgid "Quotes"
-msgstr ""
-
-#: inc/template-tags.php:107
-msgctxt "post format archive title"
-msgid "Links"
-msgstr ""
-
-#: inc/template-tags.php:109
-msgctxt "post format archive title"
-msgid "Statuses"
-msgstr ""
-
-#: inc/template-tags.php:111
-msgctxt "post format archive title"
-msgid "Audio"
-msgstr ""
-
-#: inc/template-tags.php:113
-msgctxt "post format archive title"
-msgid "Chats"
-msgstr ""
-
-#: inc/template-tags.php:116
-#, php-format
+#: inc/template-tags.php:124
 msgid "Archives: %s"
 msgstr ""
 
+#: inc/template-tags.php:128
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
-#: inc/template-tags.php:120
-#, php-format
 msgid "%1$s: %2$s"
 msgstr ""
 
-#: inc/template-tags.php:122
+#: inc/template-tags.php:132
 msgid "Archives"
 msgstr ""
 
@@ -632,8 +545,7 @@ msgid "Header Sidebar"
 msgstr ""
 
 #: inc/widgets/widgets.php:42
-msgid ""
-"Shows widgets in the Header Section just above the main navigation menu."
+msgid "Shows widgets in the Header Section just above the main navigation menu."
 msgstr ""
 
 #: inc/widgets/widgets.php:51
@@ -735,10 +647,10 @@ msgid "TG: 728x90 Advertisement"
 msgstr ""
 
 #: inc/widgets/widgets.php:210 inc/widgets/widgets.php:299
-#: inc/widgets/widgets.php:389 inc/widgets/widgets.php:605
-#: inc/widgets/widgets.php:757 inc/widgets/widgets.php:907
-#: inc/widgets/widgets.php:1027 inc/widgets/widgets.php:1140
-#: inc/widgets/widgets.php:1248
+#: inc/widgets/widgets.php:389 inc/widgets/widgets.php:606
+#: inc/widgets/widgets.php:758 inc/widgets/widgets.php:908
+#: inc/widgets/widgets.php:1028 inc/widgets/widgets.php:1141
+#: inc/widgets/widgets.php:1249
 msgid "Title:"
 msgstr ""
 
@@ -809,92 +721,91 @@ msgstr ""
 msgid "TG: Featured Post (Style 1)"
 msgstr ""
 
-#: inc/widgets/widgets.php:495 inc/widgets/widgets.php:603
-#: inc/widgets/widgets.php:755 inc/widgets/widgets.php:905
+#: inc/widgets/widgets.php:495 inc/widgets/widgets.php:604
+#: inc/widgets/widgets.php:756 inc/widgets/widgets.php:906
 msgid "Layout will be as below:"
 msgstr ""
 
-#: inc/widgets/widgets.php:497 inc/widgets/widgets.php:607
-#: inc/widgets/widgets.php:759 inc/widgets/widgets.php:909
+#: inc/widgets/widgets.php:497 inc/widgets/widgets.php:608
+#: inc/widgets/widgets.php:760 inc/widgets/widgets.php:910
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets/widgets.php:499 inc/widgets/widgets.php:609
-#: inc/widgets/widgets.php:761 inc/widgets/widgets.php:911
+#: inc/widgets/widgets.php:499 inc/widgets/widgets.php:610
+#: inc/widgets/widgets.php:762 inc/widgets/widgets.php:912
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets/widgets.php:500 inc/widgets/widgets.php:610
-#: inc/widgets/widgets.php:762 inc/widgets/widgets.php:912
+#: inc/widgets/widgets.php:500 inc/widgets/widgets.php:611
+#: inc/widgets/widgets.php:763 inc/widgets/widgets.php:913
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets/widgets.php:501 inc/widgets/widgets.php:611
-#: inc/widgets/widgets.php:763 inc/widgets/widgets.php:913
+#: inc/widgets/widgets.php:501 inc/widgets/widgets.php:612
+#: inc/widgets/widgets.php:764 inc/widgets/widgets.php:914
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets/widgets.php:556
+#: inc/widgets/widgets.php:557
 msgid " Read More <i class=\"fa fa-angle-double-right\"></i>"
 msgstr ""
 
-#: inc/widgets/widgets.php:587 inc/widgets/widgets.php:739
-#: inc/widgets/widgets.php:889
+#: inc/widgets/widgets.php:588 inc/widgets/widgets.php:740
+#: inc/widgets/widgets.php:890
 msgid "Display latest posts or posts of specific category."
 msgstr ""
 
-#: inc/widgets/widgets.php:589
+#: inc/widgets/widgets.php:590
 msgid "TG: Featured Posts (Style 2)"
 msgstr ""
 
-#: inc/widgets/widgets.php:710 inc/widgets/widgets.php:861
+#: inc/widgets/widgets.php:711 inc/widgets/widgets.php:862
 msgid "Read More <i class=\"fa fa-angle-double-right\"></i>"
 msgstr ""
 
-#: inc/widgets/widgets.php:741
+#: inc/widgets/widgets.php:742
 msgid "TG: Featured Posts (Style 3)"
 msgstr ""
 
-#: inc/widgets/widgets.php:891
+#: inc/widgets/widgets.php:892
 msgid "TG: Featured Posts (Style 4)"
 msgstr ""
 
-#: inc/widgets/widgets.php:1015
+#: inc/widgets/widgets.php:1016
 msgid ""
 "Displays the random posts from your site. Suitable for the Right/Left "
 "sidebar."
 msgstr ""
 
-#: inc/widgets/widgets.php:1017
+#: inc/widgets/widgets.php:1018
 msgid "TG: Random Posts Widget"
 msgstr ""
 
-#: inc/widgets/widgets.php:1029
+#: inc/widgets/widgets.php:1030
 msgid "Number of random posts to display:"
 msgstr ""
 
-#: inc/widgets/widgets.php:1128
+#: inc/widgets/widgets.php:1129
 msgid "Displays the popular posts. Suitable for the Right/Left sidebar."
 msgstr ""
 
-#: inc/widgets/widgets.php:1130
+#: inc/widgets/widgets.php:1131
 msgid "TG: Popular Posts Widget"
 msgstr ""
 
-#: inc/widgets/widgets.php:1142
+#: inc/widgets/widgets.php:1143
 msgid "Number of popular posts to display:"
 msgstr ""
 
-#: inc/widgets/widgets.php:1239
+#: inc/widgets/widgets.php:1240
 msgid "This widget will display the Custom Tags."
 msgstr ""
 
-#: inc/widgets/widgets.php:1241
+#: inc/widgets/widgets.php:1242
 msgid "TG: Custom Tag Cloud"
 msgstr ""
 
 #: search.php:24
-#, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
@@ -915,7 +826,6 @@ msgid "Example Widget"
 msgstr ""
 
 #: sidebar-left.php:31 sidebar.php:31
-#, php-format
 msgid ""
 "This is an example widget to show how the %s Sidebar looks by default. You "
 "can add custom widgets from the %swidgets screen%s in the admin. If custom "
@@ -931,9 +841,7 @@ msgid "Nothing Found"
 msgstr ""
 
 #: template-parts/content-none.php:22
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-none.php:26
@@ -948,11 +856,113 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: template-parts/content-page.php:23 template-parts/content-single.php:58
+#: template-parts/content-page.php:27 template-parts/content-single.php:58
 #: template-parts/content.php:52
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content-search.php:51 template-parts/content.php:59
+#: template-parts/content-search.php:53 template-parts/content.php:59
 msgid "Read more"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ColorNews"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://themegrill.com/themes/colornews/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"ColorNews is a perfect free responsive news style WordPress theme. This "
+"theme provides beautiful well-organized magazine look and feel, carefully "
+"designed to give stunning impression to your visitors. Represent your "
+"categories with different colors and make your site colorful and crisp. "
+"This theme is specially crafted for news, newspaper, publishing and "
+"magazine types of site. Got a new magazine site project? This theme will be "
+"an ideal fit. Get free support at http://themegrill.com/support-forum/ and "
+"check the demo at http://demo.themegrill.com/colornews/"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://themegrill.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Contact Page Template"
+msgstr ""
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/functions.php:28
+#. Translators: If there are characters in your language that are not supported
+#. by Roboto, translate this to 'off'. Do not translate into your own language.
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:98
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:100
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:102
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:105
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:107
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:109
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:111
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:113
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:115
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:117
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:121
+msgctxt "post format archive title"
+msgid "Chats"
 msgstr ""

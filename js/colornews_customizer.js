@@ -1,7 +1,7 @@
 /**
  * Theme Customizer related js
  */
-
+/* global colornews_customizer_obj */
 jQuery(document).ready(function() {
 
    jQuery('#customize-info .preview-notice').append(
