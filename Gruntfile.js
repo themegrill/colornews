@@ -16,36 +16,30 @@ module.exports = function( grunt ){
 				jshintrc: '.jshintrc'
 			},
 			all: [
-				'Gruntfile.js',
-				'<%= dirs.js %>/*.js',
-				'!<%= dirs.js %>/*.min.js',
+            'Gruntfile.js',
+            '<%= dirs.js %>/*.js',
+            '!<%= dirs.js %>/*.min.js',
             '!<%= dirs.js %>/fitvids/jquery.fitvids.js',
-            '!<%= dirs.js %>/jquery.bxslider/jquery.bxslider.js',
             '!<%= dirs.js %>/magnific-popup/jquery.magnific-popup.js',
+            '!<%= dirs.js %>/news-ticker/jquery.newsTicker.js',
             '!<%= dirs.js %>/sticky/jquery.sticky.js',
-            '!<%= dirs.js %>/tickerme/tickerme.js',
             '!<%= dirs.js %>/html5shiv.js',
-            '!<%= dirs.js %>/image-uploader.js',
-            '!<%= dirs.js %>/skip-link-focus-fix.js'
+            '!<%= dirs.js %>/jquery.bxslider.js',
+            '!<%= dirs.js %>/image-uploader.js'
 			]
 		},
 
 		// Generate POT files.
 		makepot: {
-			options: {
-				type: 'wp-theme',
-				domainPath: 'languages',
-				potHeaders: {
-					'report-msgid-bugs-to': 'themegrill@gmail.com',
-					'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
-				}
-			},
 			dist: {
 				options: {
+					type: 'wp-theme',
+					domainPath: 'languages',
 					potFilename: 'colornews.pot',
-					exclude: [
-						'deploy/.*' // Exclude deploy directory
-					]
+					potHeaders: {
+						'report-msgid-bugs-to': 'themegrill@gmail.com',
+						'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
+					}
 				}
 			}
 		},
@@ -78,13 +72,34 @@ module.exports = function( grunt ){
 				],
 				expand: true
 			}
-		}
+		},
 
+		// Compress files and folders.
+		compress: {
+			options: {
+				archive: 'colornews.zip'
+			},
+			files: {
+				src: [
+					'**',
+					'!.*',
+					'!*.md',
+					'!*.zip',
+					'!.*/**',
+					'!Gruntfile.js',
+					'!package.json',
+					'!node_modules/**'
+				],
+				dest: 'colornews',
+				expand: true
+			}
+		}
 	});
 
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
+	grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 
 	// Register tasks
@@ -95,5 +110,10 @@ module.exports = function( grunt ){
 	grunt.registerTask( 'dev', [
 		'default',
 		'makepot'
+	]);
+
+	grunt.registerTask( 'zip', [
+		'dev',
+		'compress'
 	]);
 };
