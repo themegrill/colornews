@@ -44,7 +44,7 @@ and we will include it within the theme from next version update.
 
 /**********************************************************/
 
-== CHANGE LOG ==
+== Changelog ==
 = Version 1.0.6 =
 * Theme information is properly organized in Customize panel.
 * Theme is now compatible with WooCommerce.

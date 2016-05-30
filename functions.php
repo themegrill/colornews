@@ -122,7 +122,7 @@ function colornews_setup() {
 		'default-color' => '565759',
 		'default-image' => get_template_directory_uri() . '/img/bg-pattern.jpg',
 	) ) );
-   
+
    // adding the WooCommerce plugin support
    add_theme_support( 'woocommerce' );
 }
@@ -172,4 +172,15 @@ require_once( COLORNEWS_WIDGETS_DIR . '/widgets.php' );
  * Detect plugin. For use on Front End only.
  */
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+/**
+ * Assign the ColorNews version to a variable.
+ */
+$theme            = wp_get_theme( 'colornews' );
+$colornews_version = $theme['Version'];
+
+/* Calling in the admin area for the Welcome Page */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/class-colornews-admin.php';
+}
 ?>
