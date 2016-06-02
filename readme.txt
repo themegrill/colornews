@@ -45,6 +45,10 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Tweaks - Updated theme tags as per new introduced tags.
+* Tweaks - Introduced welcome page for theme.
+
 = Version 1.0.6 =
 * Theme information is properly organized in Customize panel.
 * Theme is now compatible with WooCommerce.
