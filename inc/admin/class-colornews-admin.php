@@ -84,7 +84,7 @@ class ColorNews_Admin {
 				<h1>
 					<?php esc_html_e('About', 'colornews'); ?>
 					<?php echo $theme->display( 'Name' ); ?>
-					<?php printf( esc_html__( '%s', 'colornews' ), $major_version ); ?>
+					<?php printf( '%s', $major_version ); ?>
 				</h1>
 
 			<div class="welcome-description-wrap">
@@ -203,10 +203,10 @@ class ColorNews_Admin {
 			<div class="return-to-dashboard colornews">
 				<?php if ( current_user_can( 'update_core' ) && isset( $_GET['updated'] ) ) : ?>
 					<a href="<?php echo esc_url( self_admin_url( 'update-core.php' ) ); ?>">
-						<?php is_multisite() ? esc_html_e( 'Return to Updates' ) : esc_html_e( 'Return to Dashboard &rarr; Updates' ); ?>
+						<?php is_multisite() ? esc_html_e( 'Return to Updates', 'colornews' ) : esc_html_e( 'Return to Dashboard &rarr; Updates', 'colornews' ); ?>
 					</a> |
 				<?php endif; ?>
-				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home' ) : esc_html_e( 'Go to Dashboard' ); ?></a>
+				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home', 'colornews' ) : esc_html_e( 'Go to Dashboard', 'colornews' ); ?></a>
 			</div>
 		</div>
 		<?php
@@ -223,7 +223,7 @@ class ColorNews_Admin {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php esc_html_e( 'View changelog below.', 'colornews' ); ?></p>
+			<p class="about-description"><?php esc_html_e( 'View changelog below:', 'colornews' ); ?></p>
 
 			<?php
 				$changelog_file = apply_filters( 'colornews_changelog_file', get_template_directory() . '/readme.txt' );
@@ -276,17 +276,23 @@ class ColorNews_Admin {
 
 			<?php $this->intro(); ?>
 
-			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins.', 'colornews' ); ?></p>
+			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins:', 'colornews' ); ?></p>
 			<ol>
-				<li><?php printf(__('<a href="%s" target="_blank">Contact Form 7</a>', 'colornews'), esc_url('https://wordpress.org/plugins/contact-form-7/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">WP-PageNavi</a>', 'colornews'), esc_url('https://wordpress.org/plugins/wp-pagenavi/')); ?></li>
-				<li><?php printf(__('<a href="%s" target="_blank">WooCommerce</a>', 'colornews'), esc_url('https://wordpress.org/plugins/woocommerce/')); ?></li>
+				<li><a href="<?php echo esc_url('https://wordpress.org/plugins/social-icons/'); ?>" target="_blank"><?php esc_html_e('Social Icons', 'colornews'); ?></a>
+					<?php esc_html_e(' by ThemeGrill', 'colornews'); ?>
+				</li>
+				<li><a href="<?php echo esc_url('https://wordpress.org/plugins/easy-social-sharing/'); ?>" target="_blank"><?php esc_html_e('Easy Social Sharing', 'colornews' ); ?></a>
+					<?php esc_html_e(' by ThemeGrill', 'colornews'); ?>
+				</li>
+				<li><a href="<?php echo esc_url('https://wordpress.org/plugins/contact-form-7/'); ?>" target="_blank"><?php esc_html_e('Contact Form 7', 'colornews'); ?></a></li>
+				<li><a href="<?php echo esc_url('https://wordpress.org/plugins/wp-pagenavi/'); ?>" target="_blank"><?php esc_html_e('WP-PageNavi', 'colornews'); ?></a></li>
+				<li><a href="<?php echo esc_url('https://wordpress.org/plugins/woocommerce/'); ?>" target="_blank"><?php esc_html_e('WooCommerce', 'colornews'); ?></a></li>
 				<li>
-					<?php printf(__('<a href="%s" target="_blank">Polylang</a>', 'colornews'), esc_url('https://wordpress.org/plugins/polylang/')); ?>
+					<a href="<?php echo esc_url('https://wordpress.org/plugins/polylang/'); ?>" target="_blank"><?php esc_html_e('Polylang', 'colornews'); ?></a>
 					<?php esc_html_e('Fully Compatible in Pro Version', 'colornews'); ?>
 				</li>
 				<li>
-					<?php printf(__('<a href="%s" target="_blank">WMPL</a>', 'colornews'), esc_url('https://wpml.org/')); ?>
+					<a href="<?php echo esc_url('https://wpml.org/'); ?>" target="_blank"><?php esc_html_e('WMPL', 'colornews'); ?></a>
 					<?php esc_html_e('Fully Compatible in Pro Version', 'colornews'); ?>
 				</li>
 			</ol>
@@ -504,6 +510,13 @@ class ColorNews_Admin {
 						<td><h3><?php esc_html_e('WooCommerce Compatible', 'colornews'); ?></h3></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
 						<td><span class="dashicons dashicons-yes"></span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td class="btn-wrapper">
+							<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'colornews' ); ?></a>
+						</td>
 					</tr>
 				</tbody>
 			</table>
