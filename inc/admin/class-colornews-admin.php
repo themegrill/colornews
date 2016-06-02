@@ -23,6 +23,7 @@ class ColorNews_Admin {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+		add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
 		add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
 	}
 
@@ -49,10 +50,36 @@ class ColorNews_Admin {
 	 * Add admin notice.
 	 */
 	public function admin_notice() {
-		global $pagenow;
+		global $colornews_version, $pagenow;
 
+		wp_enqueue_style( 'colornews-message', get_template_directory_uri() . '/css/admin/message.css', array(), $colornews_version );
+
+		// Let's bail on theme activation.
 		if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
 			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+			update_option( 'colornews_admin_notice_welcome', 1 );
+
+		// No option? Let run the notice wizard again..
+		} elseif( ! get_option( 'colornews_admin_notice_welcome' ) ) {
+			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+		}
+	}
+
+	/**
+	 * Hide a notice if the GET variable is set.
+	 */
+	public static function hide_notices() {
+		if ( isset( $_GET['colornews-hide-notice'] ) && isset( $_GET['_colornews_notice_nonce'] ) ) {
+			if ( ! wp_verify_nonce( $_GET['_colornews_notice_nonce'], 'colornews_hide_notices_nonce' ) ) {
+				wp_die( __( 'Action failed. Please refresh the page and retry.', 'colornews' ) );
+			}
+
+			if ( ! current_user_can( 'manage_options' ) ) {
+				wp_die( __( 'Cheatin&#8217; huh?', 'colornews' ) );
+			}
+
+			$hide_notice = sanitize_text_field( $_GET['colornews-hide-notice'] );
+			update_option( 'colornews_admin_notice_' . $hide_notice, 1 );
 		}
 	}
 
@@ -61,9 +88,12 @@ class ColorNews_Admin {
 	 */
 	public function welcome_notice() {
 		?>
-		<div class="updated notice is-dismissible">
-			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing ColorNews! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'colornews' ), '<a href="' . esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ) . '">', '</a>' ); ?></p>
-			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ); ?>" class="button" style="text-decoration: none;"><?php esc_html_e( 'Get started with ColorNews', 'colornews' ); ?></a></p>
+		<div id="message" class="updated colornews-message">
+			<a class="colornews-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'colornews-hide-notice', 'welcome' ) ), 'colornews_hide_notices_nonce', '_colornews_notice_nonce' ) ); ?>"><?php esc_html_e( 'Dismiss', 'colornews' ); ?></a>
+			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing colornews! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'colornews' ), '<a href="' . esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p class="submit">
+				<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ); ?>"><?php esc_html_e( 'Get started with colornews', 'colornews' ); ?></a>
+			</p>
 		</div>
 		<?php
 	}
@@ -151,31 +181,31 @@ class ColorNews_Admin {
 			<div class="changelog point-releases">
 				<div class="under-the-hood two-col">
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Theme Customizer', 'colornews' ); ?></h3>
+						<h3><?php esc_html_e( 'Theme Customizer', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'colornews' ) ?></p>
 						<p><a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-secondary"><?php esc_html_e( 'Customize', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Documentation', 'colornews' ); ?></h3>
+						<h3><?php esc_html_e( 'Documentation', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'colornews' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/theme-instruction/colornews/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Got theme support question?', 'colornews' ); ?></h3>
+						<h3><?php esc_html_e( 'Got theme support question?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'colornews' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Need more features?', 'colornews' ); ?></h3>
+						<h3><?php esc_html_e( 'Need more features?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'colornews' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/themes/colornews-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
-						<h3><?php echo esc_html_e( 'Got sales related question?', 'colornews' ); ?></h3>
+						<h3><?php esc_html_e( 'Got sales related question?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please send it via our sales contact page.', 'colornews' ) ?></p>
 						<p><a href="<?php echo esc_url( 'http://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'colornews' ); ?></a></p>
 					</div>
@@ -183,7 +213,7 @@ class ColorNews_Admin {
 					<div class="col">
 						<h3>
 							<?php
-							echo esc_html_e( 'Translate', 'colornews' );
+							esc_html_e( 'Translate', 'colornews' );
 							echo ' ' . $theme->display( 'Name' );
 							?>
 						</h3>
