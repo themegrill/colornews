@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ColorNews 1.0.6\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-05-02 11:40:16+00:00\n"
+"POT-Creation-Date: 2016-06-29 06:35:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +12,32 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: inc/admin/class-colornews-admin.php:361
+msgid "1"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:391
+#: inc/admin/class-colornews-admin.php:392
+msgid "3"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:396
+#: inc/admin/class-colornews-admin.php:397
+msgid "4"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:381
+msgid "10"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:382
+msgid "18"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:362
+msgid "21"
+msgstr ""
 
 #: 404.php:32
 msgid "404"
@@ -51,7 +77,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:88
+#: functions.php:88 inc/admin/class-colornews-admin.php:385
 msgid "Social Menu"
 msgstr ""
 
@@ -69,6 +95,360 @@ msgstr ""
 
 #: header.php:131
 msgid "&times;"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:36
+#: inc/admin/class-colornews-admin.php:115
+msgid "About"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:74
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:78
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:92
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:93
+msgid ""
+"Welcome! Thank you for choosing colornews! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:95
+msgid "Get started with colornews"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:130 inc/customizer.php:39
+msgid "Theme Info"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:132 inc/customizer.php:51
+msgid "View Demo"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:134
+#: inc/admin/class-colornews-admin.php:204 inc/customizer.php:722
+msgid "View PRO version"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:136 inc/customizer.php:55
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:144
+msgid "Supported Plugins"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:147
+msgid "Free Vs Pro"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:150
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:184
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:185
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:186
+msgid "Customize"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:190
+#: inc/admin/class-colornews-admin.php:192 inc/customizer.php:47
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:191
+msgid "Please view our documentation page to setup the theme."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:196
+msgid "Got theme support question?"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:197
+msgid "Please put it in our dedicated support forum."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:198
+#: inc/admin/class-colornews-admin.php:355 inc/customizer.php:43
+msgid "Support"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:202
+msgid "Need more features?"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:203
+#: inc/admin/class-colornews-admin.php:343
+msgid "Upgrade to PRO version for more exciting features."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:208
+msgid "Got sales related question?"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:209
+msgid "Please send it via our sales contact page."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:210 sidebar-left.php:24 sidebar.php:24
+msgid "Contact Page"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:216
+#: inc/admin/class-colornews-admin.php:224
+msgid "Translate"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:220
+msgid "Click below to translate this theme into your own language."
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:236
+msgid "Return to Updates"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:236
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:239
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:239
+msgid "Go to Dashboard"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:256
+msgid "View changelog below:"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:309
+msgid "This theme recommends following plugins:"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:311
+msgid "Social Icons"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:312
+#: inc/admin/class-colornews-admin.php:315
+msgid " by ThemeGrill"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:314
+msgid "Easy Social Sharing"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:317
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:318
+msgid "WP-PageNavi"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:319
+msgid "WooCommerce"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:321
+msgid "Polylang"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:322
+#: inc/admin/class-colornews-admin.php:326
+msgid "Fully Compatible in Pro Version"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:325
+msgid "WMPL"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:348
+msgid "Features"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ColorNews"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:350
+msgid "ColorNews Pro"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:356
+msgid "Forum"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:357
+msgid "Forum + Emails/Support Ticket"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:360
+msgid "Color Options"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:365 inc/customizer.php:512
+msgid "Primary color option"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:370
+msgid "Font Size Options"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:375
+msgid "Google Fonts Options"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:377
+msgid "600+"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:380
+msgid "Custom Widgets"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:390
+msgid "Custom Menu"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:395
+msgid "Footer Sidebar"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:400 inc/customizer.php:350
+msgid "Site Layout"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:405
+msgid "Options in Breaking News"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:410
+msgid "Unique Post System"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:415 inc/customizer.php:575
+msgid "Related Posts"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:420
+msgid "Author Biography"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:425
+msgid "Author Biography with Social Icons"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:430
+msgid "Footer Copyright Editor"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:435 inc/widgets/widgets.php:375
+msgid "TG: 125x125 Advertisement"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:440 inc/widgets/widgets.php:286
+msgid "TG: 300x250 Advertisement"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:445 inc/widgets/widgets.php:196
+msgid "TG: 728x90 Advertisement"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:450
+msgid "TG: Videos"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:455
+msgid "TG: Tabbed Widget"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:460 inc/widgets/widgets.php:1242
+msgid "TG: Custom Tag Cloud"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:465 inc/widgets/widgets.php:1131
+msgid "TG: Popular Posts Widget"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:470 inc/widgets/widgets.php:1018
+msgid "TG: Random Posts Widget"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:475 inc/widgets/widgets.php:483
+msgid "TG: Featured Post (Style 1)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:480
+msgid "TG: Featured Post (Style 2)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:485
+msgid "TG: Featured Post (Style 3)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:490
+msgid "TG: Featured Post (Style 4)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:495
+msgid "TG: Featured Posts (Style 5)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:500
+msgid "TG: Featured Posts (Style 6)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:505
+msgid "TG: Featured Posts (Style 7)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:510
+msgid "TG: Featured Posts (Style 8)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:515
+msgid "TG: Featured Posts (Style 9)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:520
+msgid "TG: Featured Posts (Style 10)"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:525 inc/customizer.php:633
+msgid "Category Color Options"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:530
+msgid "WPML Compatible"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:535
+msgid "Polylang Compatible"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:540
+msgid "WooCommerce Compatible"
+msgstr ""
+
+#: inc/admin/class-colornews-admin.php:548
+msgid "View Pro"
 msgstr ""
 
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
@@ -93,26 +473,6 @@ msgstr ""
 
 #: inc/admin/meta-boxes.php:48
 msgid "No Sidebar Content Centered"
-msgstr ""
-
-#: inc/customizer.php:39
-msgid "Theme Info"
-msgstr ""
-
-#: inc/customizer.php:43
-msgid "Support"
-msgstr ""
-
-#: inc/customizer.php:47
-msgid "Documentation"
-msgstr ""
-
-#: inc/customizer.php:51
-msgid "View Demo"
-msgstr ""
-
-#: inc/customizer.php:55
-msgid "Rate this theme"
 msgstr ""
 
 #: inc/customizer.php:67
@@ -263,10 +623,6 @@ msgstr ""
 msgid "Check to hide blog posts/static page on the front page."
 msgstr ""
 
-#: inc/customizer.php:350
-msgid "Site Layout"
-msgstr ""
-
 #: inc/customizer.php:362
 msgid ""
 "Choose the required layout for your site. The change is reflected in the "
@@ -312,10 +668,6 @@ msgid ""
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:512
-msgid "Primary color option"
-msgstr ""
-
 #: inc/customizer.php:523
 msgid ""
 "This will reflect in links and many others. Choose a color to match your "
@@ -336,10 +688,6 @@ msgstr ""
 
 #: inc/customizer.php:569
 msgid "Additional Options"
-msgstr ""
-
-#: inc/customizer.php:575
-msgid "Related Posts"
 msgstr ""
 
 #: inc/customizer.php:587
@@ -366,10 +714,6 @@ msgstr ""
 msgid "Check to enable the lightbox for the featured images in single post."
 msgstr ""
 
-#: inc/customizer.php:633
-msgid "Category Color Options"
-msgstr ""
-
 #: inc/customizer.php:635
 msgid "Change the color of each category items as you want for your site."
 msgstr ""
@@ -380,10 +724,6 @@ msgstr ""
 
 #: inc/customizer.php:662 inc/template-tags.php:91
 msgid "%s"
-msgstr ""
-
-#: inc/customizer.php:722
-msgid "View PRO version"
 msgstr ""
 
 #: inc/extras.php:54
@@ -642,10 +982,6 @@ msgstr ""
 msgid "Add your 728x90 Advertisement here"
 msgstr ""
 
-#: inc/widgets/widgets.php:196
-msgid "TG: 728x90 Advertisement"
-msgstr ""
-
 #: inc/widgets/widgets.php:210 inc/widgets/widgets.php:299
 #: inc/widgets/widgets.php:389 inc/widgets/widgets.php:606
 #: inc/widgets/widgets.php:758 inc/widgets/widgets.php:908
@@ -675,10 +1011,6 @@ msgstr ""
 msgid "Add your 300x250 Advertisement here"
 msgstr ""
 
-#: inc/widgets/widgets.php:286
-msgid "TG: 300x250 Advertisement"
-msgstr ""
-
 #: inc/widgets/widgets.php:301
 msgid "Add your Advertisement 300x250 Image Here"
 msgstr ""
@@ -693,10 +1025,6 @@ msgstr ""
 
 #: inc/widgets/widgets.php:373
 msgid "Add your 125x125 Advertisement here"
-msgstr ""
-
-#: inc/widgets/widgets.php:375
-msgid "TG: 125x125 Advertisement"
 msgstr ""
 
 #: inc/widgets/widgets.php:391
@@ -715,10 +1043,6 @@ msgstr ""
 msgid ""
 "Display latest posts or posts of specific category. Suitable for the Front "
 "Page: Slider Area."
-msgstr ""
-
-#: inc/widgets/widgets.php:483
-msgid "TG: Featured Post (Style 1)"
 msgstr ""
 
 #: inc/widgets/widgets.php:495 inc/widgets/widgets.php:604
@@ -777,20 +1101,12 @@ msgid ""
 "sidebar."
 msgstr ""
 
-#: inc/widgets/widgets.php:1018
-msgid "TG: Random Posts Widget"
-msgstr ""
-
 #: inc/widgets/widgets.php:1030
 msgid "Number of random posts to display:"
 msgstr ""
 
 #: inc/widgets/widgets.php:1129
 msgid "Displays the popular posts. Suitable for the Right/Left sidebar."
-msgstr ""
-
-#: inc/widgets/widgets.php:1131
-msgid "TG: Popular Posts Widget"
 msgstr ""
 
 #: inc/widgets/widgets.php:1143
@@ -801,20 +1117,12 @@ msgstr ""
 msgid "This widget will display the Custom Tags."
 msgstr ""
 
-#: inc/widgets/widgets.php:1242
-msgid "TG: Custom Tag Cloud"
-msgstr ""
-
 #: search.php:24
 msgid "Search Results for: %s"
 msgstr ""
 
 #: searchform.php:11
 msgid "Enter a word for search"
-msgstr ""
-
-#: sidebar-left.php:24 sidebar.php:24
-msgid "Contact Page"
 msgstr ""
 
 #: sidebar-left.php:26
@@ -863,10 +1171,6 @@ msgstr ""
 
 #: template-parts/content-search.php:53 template-parts/content.php:59
 msgid "Read more"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "ColorNews"
 msgstr ""
 
 #. Theme URI of the plugin/theme
