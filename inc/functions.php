@@ -687,4 +687,16 @@ function colornews_get_sidebar() {
    colornews_sidebar_select();
    echo '</div></div></div></div>';
 }
+
+// Displays the site logo
+if ( ! function_exists( 'colornews_the_custom_logo' ) ) {
+  /**
+   * Displays the optional custom logo.
+   */
+  function colornews_the_custom_logo() {
+    if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'esteem_header_logo_image','' ) == '') ) {
+      the_custom_logo();
+    }
+  }
+}
 ?>

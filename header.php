@@ -64,10 +64,17 @@
          <div class="tg-container">
             <div class="tg-inner-wrap">
             <?php
-               if((get_theme_mod('colornews_header_logo_placement', 'header_text_only') == 'show_both' || get_theme_mod('colornews_header_logo_placement', 'header_text_only') == 'header_logo_only') && get_theme_mod('colornews_logo', '') != '') {
+               if((get_theme_mod('colornews_header_logo_placement', 'header_text_only') == 'show_both' || get_theme_mod('colornews_header_logo_placement', 'header_text_only') == 'header_logo_only') ) {
                ?>
                   <div class="logo">
-                     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url(get_theme_mod('colornews_logo')); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+                  	<?php if ( get_theme_mod('colornews_logo', '') != '') { ?>
+                  		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url(get_theme_mod('colornews_logo')); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+					<?php } ?>
+
+					<?php if (function_exists('the_custom_logo') && has_custom_logo( $blog_id = 0 )) {
+						colornews_the_custom_logo();
+					} ?>
+
                   </div><!-- #logo -->
                <?php
                }
