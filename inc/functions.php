@@ -694,7 +694,7 @@ if ( ! function_exists( 'colornews_the_custom_logo' ) ) {
    * Displays the optional custom logo.
    */
   function colornews_the_custom_logo() {
-    if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'esteem_header_logo_image','' ) == '') ) {
+    if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'colornews_logo','' ) == '') ) {
       the_custom_logo();
     }
   }
