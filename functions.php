@@ -74,6 +74,12 @@ function colornews_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
+	// Adds the support for the Custom Logo introduced in WordPress 4.5
+	add_theme_support( 'custom-logo', array(
+		'flex-width' => true,
+		'flex-height' => true,
+	));
+
    // Cropping the images to different sizes to be used in the theme
    add_image_size( 'colornews-big-slider', 1070, 470, true );
    add_image_size( 'colornews-big-slider-thumb', 184, 109, true );
