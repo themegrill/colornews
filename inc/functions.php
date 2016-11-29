@@ -386,7 +386,7 @@ function colornews_custom_css() {
       ?><style type="text/css"><?php echo $colornews_internal_css; ?></style><?php
    }
 
-   $colornews_custom_css = get_theme_mod( 'colornews_custom_css', '' );
+   $colornews_custom_css = get_theme_mod( 'colornews_custom_css' );
    if( $colornews_custom_css && ! function_exists( 'wp_update_custom_css_post' ) ) {
       echo '<!-- '.get_bloginfo('name').' Custom Styles -->';
       ?><style type="text/css"><?php echo $colornews_custom_css; ?></style><?php
