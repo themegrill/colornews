@@ -530,6 +530,7 @@ function colornews_customize_register($wp_customize) {
    )));
 
    // custom CSS setting
+   if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
    class COLORNEWS_Custom_CSS_Control extends WP_Customize_Control {
 
       public $type = 'custom_css';
@@ -563,6 +564,7 @@ function colornews_customize_register($wp_customize) {
       'section' => 'colornews_custom_css_setting',
       'settings' => 'colornews_custom_css'
    )));
+}
    // End of Design Options
 
    // Start of the Additional Options
