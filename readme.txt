@@ -45,6 +45,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+
 = Version 1.0.8 TBD =
 * Tweaks - Enhancement for the media uploader scripts used in widgets.
 * Feature - Added the Custom Site Logo feature introduced in WordPress 4.5
