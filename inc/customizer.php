@@ -97,7 +97,7 @@ function colornews_customize_register($wp_customize) {
       'panel' => 'colornews_header_options'
    ));
 
-	if ( !function_exists('the_custom_logo') || ( get_theme_mod('colornews_logo', '') != '' ) ) {
+	if ( ! function_exists('the_custom_logo') ) {
 
 		$wp_customize->add_setting('colornews_logo', array(
 			'default' => '',
