@@ -24,8 +24,7 @@ module.exports = function( grunt ){
 				'!<%= dirs.js %>/magnific-popup/jquery.magnific-popup.js',
 				'!<%= dirs.js %>/sticky/jquery.sticky.js',
 				'!<%= dirs.js %>/tickerme/tickerme.js',
-				'!<%= dirs.js %>/html5shiv.js',
-				'!<%= dirs.js %>/image-uploader.js'
+				'!<%= dirs.js %>/html5shiv.js'
 			]
 		},
 

@@ -44,7 +44,17 @@ and we will include it within the theme from next version update.
 
 /**********************************************************/
 
-== CHANGE LOG ==
+== Changelog ==
+
+= Version 1.0.8 2016-12-09 =
+* Tweaks - Enhancement for the media uploader scripts used in widgets.
+* Feature - Added the Custom Site Logo feature introduced in WordPress 4.5
+* Feature - Migrated the Custom CSS code added in theme settings to Additional CSS section introduced in WordPress 4.7
+
+= Version 1.0.7 =
+* Tweaks - Updated theme tags as per new introduced tags.
+* Tweaks - Introduced welcome page for theme.
+
 = Version 1.0.6 =
 * Theme information is properly organized in Customize panel.
 * Theme is now compatible with WooCommerce.
