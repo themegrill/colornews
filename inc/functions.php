@@ -413,6 +413,33 @@ function colornews_footer_copyright() {
 endif;
 
 /****************************************************************************************/
+// Filter the get_header_image_tag() for option of adding the link back to home page option
+function colornews_header_image_markup( $html, $header, $attr ) {
+	$output = '';
+	$header_image = get_header_image();
+
+	if( ! empty( $header_image ) ) {
+		if ( get_theme_mod( 'colornews_header_image_link', 0 ) == 1 ) {
+			$output .= '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" rel="home">';
+		}
+
+		$output .= '<div class="header-image-wrap"><img src="' . esc_url( $header_image ) . '" class="header-image" width="' . get_custom_header()->width . '" height="' .  get_custom_header()->height . '" alt="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '"></div>';
+
+		if ( get_theme_mod( 'colornews_header_image_link', 0 ) == 1 ) {
+			$output .= '</a>';
+		}
+	}
+
+	return $output;
+}
+
+function colornews_header_image_markup_filter() {
+	add_filter( 'get_header_image_tag', 'colornews_header_image_markup', 10, 3 );
+}
+
+add_action( 'colornews_header_image_markup_render','colornews_header_image_markup_filter' );
+
+/****************************************************************************************/
 
 if ( ! function_exists( 'colornews_render_header_image' ) ) :
 /**
@@ -420,7 +447,8 @@ if ( ! function_exists( 'colornews_render_header_image' ) ) :
  */
 function colornews_render_header_image() {
 	if ( function_exists( 'the_custom_header_markup' ) ) {
-			the_custom_header_markup();
+		do_action( 'colornews_header_image_markup_render' );
+		the_custom_header_markup();
 	} else {
 		$header_image = get_header_image();
 		if( ! empty( $header_image ) ) {
