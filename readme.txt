@@ -45,7 +45,8 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+
+= Version 1.0.9 2017-01-26 =
 * Added - Support for Video Headers introduced in WordPress 4.7.
 
 = Version 1.0.8 2016-12-09 =
