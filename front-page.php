@@ -6,9 +6,7 @@
  * @subpackage ColorNews
  * @since ColorNews 1.0
  */
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
 
 <div id="main" class="clearfix">
    <div class="tg-container">

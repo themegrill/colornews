@@ -11,9 +11,7 @@
  * @subpackage ColorNews
  * @since ColorNews 1.0
  */
-?>
-
-<?php get_header(); ?>
+get_header(); ?>
 
    <?php do_action( 'colornews_before_body_content' ); ?>
 
