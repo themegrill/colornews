@@ -45,6 +45,8 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Added - Support for Video Headers introduced in WordPress 4.7.
 
 = Version 1.0.8 2016-12-09 =
 * Tweaks - Enhancement for the media uploader scripts used in widgets.
