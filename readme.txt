@@ -28,10 +28,10 @@ ColorNews is distributed under the terms of the GNU GPL
 == THEME USAGE ==
 
 = Theme Instruction =
-Get theme instruction at http://themegrill.com/theme-instruction/colornews/
+Get theme instruction at https://themegrill.com/theme-instruction/colornews/
 
 = Free Support =
-Get free support at http://themegrill.com/support-forum
+Get free support at https://themegrill.com/support-forum
 
 = Theme Features Usage =
 All available options can be used from Appearance->Customize
@@ -46,7 +46,7 @@ and we will include it within the theme from next version update.
 
 == Changelog ==
 
-= Version 1.0.9 2017-01-26 =
+= Version 1.0.9 2017-02-06 =
 * Added - Support for Video Headers introduced in WordPress 4.7.
 
 = Version 1.0.8 2016-12-09 =
