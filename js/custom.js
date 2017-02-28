@@ -60,8 +60,7 @@ jQuery(document).ready(function() {
 
 });
 jQuery(document).on('click', '#site-navigation .menu li.menu-item-has-children > a', function(event) {
-    menuClass = jQuery(this).parent('.menu-item-has-children');
-    console.log('clicked');
+    var menuClass = jQuery(this).parent('.menu-item-has-children');
     if (! menuClass.hasClass('focus')){
         menuClass.addClass('focus');
         event.preventDefault();
