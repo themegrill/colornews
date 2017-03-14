@@ -45,6 +45,8 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Feature -  Added option to display the date in header set via WordPress date setting
 
 = Version 1.0.9 2017-02-06 =
 * Added - Support for Video Headers introduced in WordPress 4.7.

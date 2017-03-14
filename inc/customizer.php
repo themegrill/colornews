@@ -205,6 +205,24 @@ function colornews_customize_register($wp_customize) {
       'settings' => 'colornews_date_display'
    ));
 
+   // date in header display type
+  $wp_customize->add_setting('colornews_date_display_type', array(
+     'default' => 'theme_default',
+     'capability' => 'edit_theme_options',
+     'sanitize_callback' => 'colornews_radio_select_sanitize'
+  ));
+ 
+  $wp_customize->add_control('colornews_date_display_type', array(
+     'type' => 'radio',
+     'label' => esc_html__('Date in header display type:', 'colornews'),
+     'choices' => array(
+        'theme_default' => esc_html__('Theme Default Setting', 'colornews'),
+        'wordpress_date_setting' => esc_html__('From WordPress Date Setting', 'colornews'),
+     ),
+     'section' => 'colornews_date_display_section',
+     'settings' => 'colornews_date_display_type'
+  ));
+
    // search icon in menu enable/disable
    $wp_customize->add_section('colornews_search_icon_in_menu_section', array(
       'title' => __('Search Icon', 'colornews'),
