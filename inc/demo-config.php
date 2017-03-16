@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 function colornews_demo_importer_packages( $packages ) {
 	$new_packages = array(
 		'colornews-free' => array(
-			'name'    => __( 'ColorNews', 'colornews' ),
+			'name'    => esc_html__( 'ColorNews', 'colornews' ),
 			'preview' => 'https://demo.themegrill.com/colornews/',
 		),
 	);
