@@ -35,19 +35,19 @@ function colornews_customize_register($wp_customize) {
          //Add Theme instruction, Support Forum, Demo Link, Rating Link
          $important_links = array(
             'theme-info' => array(
-               'link' => esc_url('http://themegrill.com/themes/colornews/'),
+               'link' => esc_url('https://themegrill.com/themes/colornews/'),
                'text' => __('Theme Info', 'colornews'),
             ),
             'support' => array(
-               'link' => esc_url('http://themegrill.com/support-forum/'),
+               'link' => esc_url('https://themegrill.com/support-forum/'),
                'text' => __('Support', 'colornews'),
             ),
             'documentation' => array(
-               'link' => esc_url('http://themegrill.com/theme-instruction/colornews/'),
+               'link' => esc_url('https://themegrill.com/theme-instruction/colornews/'),
                'text' => __('Documentation', 'colornews'),
             ),
             'demo' => array(
-               'link' => esc_url('http://demo.themegrill.com/colornews/'),
+               'link' => esc_url('https://demo.themegrill.com/colornews/'),
                'text' => __('View Demo', 'colornews'),
             ),
             'rating' => array(

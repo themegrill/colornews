@@ -127,11 +127,11 @@ class ColorNews_Admin {
 		</div>
 
 		<p class="colornews-actions">
-			<a href="<?php echo esc_url( 'http://themegrill.com/themes/colornews/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'colornews' ); ?></a>
+			<a href="<?php echo esc_url( 'https://themegrill.com/themes/colornews/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'colornews' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://demo.themegrill.com/colornews/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'colornews' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://demo.themegrill.com/colornews/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'colornews' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
 
 			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://wordpress.org/support/view/theme-reviews/colornews?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'colornews' ); ?></a>
 		</p>
@@ -189,25 +189,25 @@ class ColorNews_Admin {
 					<div class="col">
 						<h3><?php esc_html_e( 'Documentation', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'colornews' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/theme-instruction/colornews/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'colornews' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/theme-instruction/colornews/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Got theme support question?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'colornews' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'colornews' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Need more features?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'colornews' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/themes/colornews-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/themes/colornews-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
 						<h3><?php esc_html_e( 'Got sales related question?', 'colornews' ); ?></h3>
 						<p><?php esc_html_e( 'Please send it via our sales contact page.', 'colornews' ) ?></p>
-						<p><a href="<?php echo esc_url( 'http://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'colornews' ); ?></a></p>
+						<p><a href="<?php echo esc_url( 'https://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'colornews' ); ?></a></p>
 					</div>
 
 					<div class="col">
@@ -545,7 +545,7 @@ class ColorNews_Admin {
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'colornews' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'colornews' ); ?></a>
 						</td>
 					</tr>
 				</tbody>

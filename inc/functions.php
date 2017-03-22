@@ -409,7 +409,7 @@ function colornews_footer_copyright() {
 
 	$wp_link = '<a href="http://wordpress.org" target="_blank" title="' . esc_attr__( 'WordPress', 'colornews' ) . '"><span>' . __( 'WordPress', 'colornews' ) . '</span></a>';
 
-	$tg_link =  '<a href="http://themegrill.com/themes/colornews" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'colornews' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'colornews') .'</span></a>';
+	$tg_link =  '<a href="https://themegrill.com/themes/colornews" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'colornews' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'colornews') .'</span></a>';
 
 	$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'colornews' ), date( 'Y' ), $site_link ).'&nbsp;'.sprintf( __( 'Theme: %1$s by %2$s.', 'colornews' ), 'ColorNews', $tg_link ).' '.sprintf( __( 'Powered by %s.', 'colornews' ), $wp_link );
 
