@@ -45,7 +45,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.1.0 2017-03-22 =
 * Feature - Added option to display the date in header set via WordPress date setting
 * Feature - Added compatibility for ThemeGrill Demo Importer plugin
 
