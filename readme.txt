@@ -45,7 +45,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.1.1 2017-04-28 =
 * Tweaks - Add theme support for WooCommerce 3.0's new gallery feature
 
 = Version 1.1.0 2017-03-22 =
