@@ -16,6 +16,7 @@ Resources packed within the theme.
 * FitVids by Chris Coyier and Paravel | WTFPL Licensed
 * Magnific-Popup by Dmitry Semenov | MIT Licensed
 * TickerMePink by gluhbirne | MIT Licensed
+* TGM-Plugin-Activation by Thomas Griffin, Gary Jones, Juliette Reinders Folmer | GPL v2 Licensed
 * Other custom js files are our own creation and is licensed under the same license as this theme.
 
 All other resources and theme elements are licensed under the [GNU GPL](http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
@@ -45,6 +46,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
+
 = Version 1.1.1 2017-04-28 =
 * Tweaks - Add theme support for WooCommerce 3.0's new gallery feature
 
