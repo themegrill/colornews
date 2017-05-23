@@ -46,6 +46,12 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Tweaks - Updated font-awesome to `v4.7.0`
+* Tweaks - Updated bxslider to `v4.2.12`
+* Tweaks - Updated fitvids to `v1.2.0`
+* Tweaks - Updated magnific-popup to `v1.1.0`
+
 = Version 1.1.2 2017-05-10 =
 * Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
 

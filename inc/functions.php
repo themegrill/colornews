@@ -47,10 +47,10 @@ function colornews_scripts() {
 
 	wp_enqueue_style( 'colornews-style', get_stylesheet_uri() );
 
-	wp_enqueue_style( 'colornews-fontawesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.4.0' );
+	wp_enqueue_style( 'colornews-fontawesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 
 	//Register bxSlider js file for slider.
-	wp_register_script( 'colornews-bxslider', COLORNEWS_JS_URL . '/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ), '4.1.2', true );
+	wp_register_script( 'colornews-bxslider', COLORNEWS_JS_URL . '/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ), '4.2.12', true );
 
 	if (get_theme_mod('colornews_primary_sticky_menu', 0) == 1) {
 		wp_register_script( 'colornews-sticky-menu', COLORNEWS_JS_URL. '/sticky/jquery.sticky.js', array( 'jquery' ), '20150708', true );
@@ -64,14 +64,14 @@ function colornews_scripts() {
 	}
 
 	// register magnific popup
-	wp_register_script( 'colornews-magnific-popup', COLORNEWS_JS_URL . '/magnific-popup/jquery.magnific-popup.min.js', array( 'jquery' ), '20150714', true );
+	wp_register_script( 'colornews-magnific-popup', COLORNEWS_JS_URL . '/magnific-popup/jquery.magnific-popup.min.js', array( 'jquery' ), '1.1.0', true );
 	wp_enqueue_style( 'colornews-featured-image-popup-css', COLORNEWS_JS_URL.'/magnific-popup/magnific-popup.css', array(), '20150714' );
 
 	// enqueue image popup
 	wp_enqueue_script( 'colornews-featured-image-popup-setting', COLORNEWS_JS_URL. '/magnific-popup/image-popup-setting.js', array( 'colornews-magnific-popup' ), '20150714', true );
 
 	// enqueueing fitvids for responsive videos
-	wp_enqueue_script( 'colornews-fitvids', COLORNEWS_JS_URL. '/fitvids/jquery.fitvids.js', array( 'jquery' ), '1.1', true );
+	wp_enqueue_script( 'colornews-fitvids', COLORNEWS_JS_URL. '/fitvids/jquery.fitvids.js', array( 'jquery' ), '1.2.0', true );
 
 	// enqueueing our custom script code
 	wp_enqueue_script( 'colornews-custom', COLORNEWS_JS_URL . '/custom.js', array( 'colornews-bxslider' ), '20150708', true );

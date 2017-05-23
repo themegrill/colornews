@@ -1,0 +1,22 @@
+{
+  "name": "colornews",
+  "description": "Magazine Theme",
+  "main": "Gruntfile.js",
+  "license": "GPL-3.0+",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bxslider-4": "^4.2.12",
+    "jquery-sticky": "sticky#^1.0.4",
+    "fitvids": "FitVids#^1.2.0",
+    "magnific-popup": "Magnific-Popup#^1.1.0"
+  }
+}
