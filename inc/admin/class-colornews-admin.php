@@ -121,7 +121,7 @@ class ColorNews_Admin {
 				<div class="about-text"><?php echo $theme->display( 'Description' ); ?></div>
 
 				<div class="colornews-screenshot">
-					<img src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.png'; ?>" />
+					<img src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.jpg'; ?>" />
 				</div>
 			</div>
 		</div>
@@ -133,7 +133,7 @@ class ColorNews_Admin {
 
 			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'http://wordpress.org/support/view/theme-reviews/colornews?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'colornews' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://wordpress.org/support/theme/colornews/reviews/?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'colornews' ); ?></a>
 		</p>
 
 		<h2 class="nav-tab-wrapper">
