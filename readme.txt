@@ -46,6 +46,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Tweaks - Introduce selective refresh for site title and description
+
 = Version 1.1.2 2017-05-10 =
 * Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
 
