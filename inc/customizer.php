@@ -152,17 +152,17 @@ function colornews_customize_register($wp_customize) {
    ));
 
    $wp_customize->add_setting('colornews_home_icon_display', array(
-      'priority' => 2,
-      'default' => 0,
-      'capability' => 'edit_theme_options',
-      'transport' => $customizer_selective_refresh,
+      'priority'          => 2,
+      'default'           => 0,
+      'capability'        => 'edit_theme_options',
+      'transport'         => $customizer_selective_refresh,
       'sanitize_callback' => 'colornews_checkbox_sanitize'
    ));
 
    $wp_customize->add_control('colornews_home_icon_display', array(
-      'type' => 'checkbox',
-      'label' => __('Check to enable the home icon in the primary menu.', 'colornews'),
-      'section' => 'colornews_home_icon_display_section',
+      'type'     => 'checkbox',
+      'label'    => __('Check to enable the home icon in the primary menu.', 'colornews'),
+      'section'  => 'colornews_home_icon_display_section',
       'settings' => 'colornews_home_icon_display'
    ));
 
@@ -397,8 +397,9 @@ function colornews_customize_register($wp_customize) {
    ));
 
    $wp_customize->add_setting('colornews_site_layout', array(
-      'default' => 'boxed_layout',
-      'capability' => 'edit_theme_options',
+      'default'           => 'boxed_layout',
+      'capability'        => 'edit_theme_options',
+      'transport'         => 'postMessage',
       'sanitize_callback' => 'colornews_radio_select_sanitize'
    ));
 

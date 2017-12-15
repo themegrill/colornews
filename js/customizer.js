@@ -16,4 +16,18 @@
 			$( '#site-description' ).text( to );
 		} );
 	} );
+
+	// Site layout
+	wp.customize( 'colornews_site_layout', function ( value ) {
+		value.bind( function ( layout ) {
+			var layout_options = layout;
+			if ( layout_options == 'boxed_layout' ) {
+				$( 'body' ).addClass( 'boxed-layout' );
+				$( 'body' ).removeClass( 'wide' );
+			} else if( layout == 'wide_layout' ) {
+				$( 'body' ).removeClass( 'boxed-layout' );
+				$( 'body' ).addClass( 'wide' );
+			}
+		});
+	});
 } )( jQuery );
