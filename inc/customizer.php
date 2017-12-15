@@ -262,18 +262,27 @@ function colornews_customize_register($wp_customize) {
    ));
 
    $wp_customize->add_setting('colornews_search_icon_in_menu', array(
-      'priority' => 5,
-      'default' => 0,
-      'capability' => 'edit_theme_options',
+      'priority'          => 5,
+      'default'           => 0,
+      'capability'        => 'edit_theme_options',
+      'transport'         => $customizer_selective_refresh,
       'sanitize_callback' => 'colornews_checkbox_sanitize'
    ));
 
    $wp_customize->add_control('colornews_search_icon_in_menu', array(
-      'type' => 'checkbox',
-      'label' => __('Check to display the Search Icon in the primary menu.', 'colornews'),
-      'section' => 'colornews_search_icon_in_menu_section',
+      'type'     => 'checkbox',
+      'label'    => __('Check to display the Search Icon in the primary menu.', 'colornews'),
+      'section'  => 'colornews_search_icon_in_menu_section',
       'settings' => 'colornews_search_icon_in_menu'
    ));
+
+   // Selective refresh for search icon
+   if ( isset( $wp_customize->selective_refresh ) ) {
+      $wp_customize->selective_refresh->add_partial( 'colornews_search_icon_in_menu', array(
+         'selector'        => '.search-icon',
+         'render_callback' => '',
+      ) );
+   }
 
    // random posts in menu enable/disable
    $wp_customize->add_section('colornews_random_post_in_menu_section', array(
