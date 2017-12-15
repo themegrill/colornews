@@ -42,9 +42,7 @@
                      </div><!-- .category-toogle-wrap end -->
                   <?php } ?>
                   <div class="top-menu-wrap">
-                     <?php if (get_theme_mod('colornews_date_display', 0) == 1)
-                        colornews_date_display();
-                     ?>
+                     <?php colornews_date_display(); ?>
                   </div>
                   <?php colornews_social_menu(); ?>
                <?php } ?>

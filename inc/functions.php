@@ -333,17 +333,19 @@ endif;
  * Display the date in the header
  */
 if ( ! function_exists( 'colornews_date_display' ) ) :
-function colornews_date_display() { ?>
-	<div class="date-in-header">
-		<?php
-		if (get_theme_mod('colornews_date_display_type', 'theme_default') == 'theme_default') {
- 			echo date_i18n('l, F j, Y');
- 		} elseif (get_theme_mod('colornews_date_display_type', 'theme_default') == 'wordpress_date_setting') {
- 			echo date_i18n(get_option('date_format'));
- 		}
- 		?>
-	</div>
+function colornews_date_display() { 
+	if (get_theme_mod('colornews_date_display', 0) == 1){ ?>
+		<div class="date-in-header">
+			<?php
+			if (get_theme_mod('colornews_date_display_type', 'theme_default') == 'theme_default') {
+	 			echo date_i18n('l, F j, Y');
+	 		} elseif (get_theme_mod('colornews_date_display_type', 'theme_default') == 'wordpress_date_setting') {
+	 			echo date_i18n(get_option('date_format'));
+	 		}
+	 		?>
+		</div>
 <?php
+	}
 }
 endif;
 
