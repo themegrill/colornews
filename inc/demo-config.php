@@ -16,6 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Setup demo importer packages.
  *
  * @param  array $packages
+ *
  * @return array
  */
 function colornews_demo_importer_packages( $packages ) {
@@ -24,8 +25,14 @@ function colornews_demo_importer_packages( $packages ) {
 			'name'    => esc_html__( 'ColorNews', 'colornews' ),
 			'preview' => 'https://demo.themegrill.com/colornews/',
 		),
+		'colornews-pro'  => array(
+			'name'     => esc_html__( 'ColorNews Pro', 'colornews' ),
+			'preview'  => 'https://demo.themegrill.com/colornews/',
+			'pro_link' => 'https://themegrill.com/themes/colornews/',
+		),
 	);
 
 	return array_merge( $new_packages, $packages );
 }
+
 add_filter( 'themegrill_demo_importer_packages', 'colornews_demo_importer_packages' );
