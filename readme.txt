@@ -46,7 +46,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.1.3 2018-03-20 =
 * Tweaks - Introduce selective refresh for site title and description
 * Fix - Slider anchors unclickable in Firefox browsers versioned 59+.
 
