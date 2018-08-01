@@ -186,11 +186,9 @@ require_once( COLORNEWS_WIDGETS_DIR . '/widgets.php' );
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
- * Load Demo Importer Configs.
+ * Load ColorMag Demo Importer compatibility file.
  */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
+require get_template_directory() . '/inc/demo-importer/class-demo-importer.php';
 
 /**
  * Assign the ColorNews version to a variable.
