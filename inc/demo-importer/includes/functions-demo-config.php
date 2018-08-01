@@ -2,23 +2,18 @@
 /**
  * Functions for configuring demo importer.
  *
- * @author   ThemeGrill
- * @category Admin
- * @package  Importer/Functions
- * @version  1.0.0
+ * @package Importer/Functions
+ * @version 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Setup demo importer packages.
  *
  * @deprecated 1.5.0
  *
- * @param  array $packages
- *
+ * @param  array $packages Demo packages.
  * @return array
  */
 function colornews_demo_importer_packages( $packages ) {
