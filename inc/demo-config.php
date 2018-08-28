@@ -2,20 +2,18 @@
 /**
  * Functions for configuring demo importer.
  *
- * @author   ThemeGrill
- * @category Admin
- * @package  Importer/Functions
- * @version  1.0.0
+ * @package Importer/Functions
+ * @version 1.0.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
- * Setup demo importer packages.
+ * Setup demo importer config.
  *
- * @param  array $packages
+ * @deprecated 1.5.0
+ *
+ * @param  array $demo_config Demo config.
  *
  * @return array
  */
@@ -36,13 +34,6 @@ function colornews_demo_importer_packages( $packages ) {
 }
 
 add_filter( 'themegrill_demo_importer_packages', 'colornews_demo_importer_packages' );
-
-/**
- * After demo imported AJAX action.
- *
- * @see colornews_set_cat_colors()
- */
-add_filter( 'themegrill_customizer_demo_import_settings', 'colornews_set_cat_colors', 20, 3 );
 
 /**
  * Set categories color settings in theme customizer.
@@ -139,3 +130,4 @@ function colornews_set_cat_colors( $data, $demo_data, $demo_id ) {
 
 	return $data;
 }
+add_filter( 'themegrill_customizer_demo_import_settings', 'colornews_set_cat_colors', 20, 3 );
