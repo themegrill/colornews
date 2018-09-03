@@ -134,7 +134,7 @@ if ( ! class_exists( 'ColorNews_Admin' ) ) :
 
 				<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://demo.themegrill.com/colornews/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'colornews' ); ?></a>
 
-				<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
+				<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews/?utm_source=colornews-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
 
 				<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://wordpress.org/support/theme/colornews/reviews/?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'colornews' ); ?></a>
 			</p>
@@ -228,7 +228,7 @@ if ( ! class_exists( 'ColorNews_Admin' ) ) :
 							<h3><?php esc_html_e( 'Need more features?', 'colornews' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'colornews' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/themes/colornews-pro/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/colornews/?utm_source=colornews-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View PRO version', 'colornews' ); ?></a>
 							</p>
 						</div>
 
@@ -585,7 +585,7 @@ if ( ! class_exists( 'ColorNews_Admin' ) ) :
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'colornews' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'colornews_pro_theme_url', 'https://themegrill.com/themes/colornews/?utm_source=colornews-free-vs-pro-table&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Pro', 'colornews' ); ?></a>
 						</td>
 					</tr>
 					</tbody>
