@@ -220,7 +220,7 @@ if ( ! class_exists( 'ColorNews_Admin' ) ) :
 							<h3><?php esc_html_e( 'Got theme support question?', 'colornews' ); ?></h3>
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'colornews' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support', 'colornews' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=colornews-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support', 'colornews' ); ?></a>
 							</p>
 						</div>
 
