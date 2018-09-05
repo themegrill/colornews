@@ -797,21 +797,6 @@ function colornews_customize_partial_blogdescription() {
 
 /*****************************************************************************************/
 
-/**
- * Enqueue scripts for customizer
- */
-function colornews_customizer_js() {
-	wp_enqueue_script( 'colornews_customizer_script', get_template_directory_uri() . '/js/colornews_customizer.js', array( "jquery" ), 'false', true );
-
-	wp_localize_script( 'colornews_customizer_script', 'colornews_customizer_obj', array(
-
-		'pro' => __( 'View PRO version', 'colornews' ),
-
-	) );
-}
-
-add_action( 'customize_controls_enqueue_scripts', 'colornews_customizer_js' );
-
 /*
  * Custom Scripts
  */
