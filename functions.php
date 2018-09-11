@@ -67,6 +67,9 @@ function colornews_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
+	// Gutenberg layout support.
+	add_theme_support( 'align-wide' );
+
 	/*
 	 * Enable support for Post Thumbnails on posts and pages.
 	 *
