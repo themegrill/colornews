@@ -131,7 +131,7 @@ function colornews_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'colornews_header_logo_placement', array(
 		'type'    => 'radio',
 		'label'   => __( 'Choose the option that you want from below.', 'colornews' ),
-		'section' => 'colornews_header_logo',
+		'section' => 'title_tagline',
 		'choices' => array(
 			'header_logo_only' => __( 'Header Logo Only', 'colornews' ),
 			'header_text_only' => __( 'Header Text Only', 'colornews' ),
