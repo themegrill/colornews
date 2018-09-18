@@ -106,22 +106,6 @@ function colornews_customize_register( $wp_customize ) {
 		'panel'    => 'colornews_header_options',
 	) );
 
-	if ( ! function_exists( 'the_custom_logo' ) ) {
-
-		$wp_customize->add_setting( 'colornews_logo', array(
-			'default'           => '',
-			'capability'        => 'edit_theme_options',
-			'sanitize_callback' => 'esc_url_raw',
-		) );
-
-		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'colornews_logo', array(
-			'label'       => __( 'Upload logo for your header here.', 'colornews' ),
-			'description' => sprintf( __( '%sInfo:%s This option will be removed in upcoming update. Please go to Site Identity section to upload the theme logo.', 'colornews' ), '<strong>', '</strong>' ),
-			'section'     => 'colornews_header_logo',
-			'setting'     => 'colornews_logo',
-		) ) );
-	}
-
 	$wp_customize->add_setting( 'colornews_header_logo_placement', array(
 		'default'           => 'header_text_only',
 		'capability'        => 'edit_theme_options',

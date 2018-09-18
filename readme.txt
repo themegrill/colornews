@@ -46,6 +46,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Remove - Backward compatible for header logo
+
 = Version 1.1.4 2018-09-05 =
 * Fix - Image upload issue in advertisement widgets for customizer option
 * Update - Upsell link
