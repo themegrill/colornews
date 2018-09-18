@@ -333,7 +333,7 @@ endif;
  * Display the date in the header
  */
 if ( ! function_exists( 'colornews_date_display' ) ) :
-function colornews_date_display() { 
+function colornews_date_display() {
 	if (get_theme_mod('colornews_date_display', 0) == 1){ ?>
 		<div class="date-in-header">
 			<?php
@@ -727,7 +727,7 @@ if ( ! function_exists( 'colornews_the_custom_logo' ) ) {
 	* Displays the optional custom logo.
 	*/
   function colornews_the_custom_logo() {
-	 if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'colornews_logo','' ) == '') ) {
+	 if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
 	 }
   }
@@ -750,23 +750,4 @@ function colornews_custom_css_migrate() {
 	 }
 }
 add_action( 'after_setup_theme', 'colornews_custom_css_migrate' );
-
-/**
- * Function to transfer the Header Logo added in Customizer Options of theme to Site Logo in Site Identity section
- */
-function colornews_site_logo_migrate() {
-	if ( function_exists( 'the_custom_logo' ) && ! has_custom_logo( $blog_id = 0 ) ) {
-		$logo_url = get_theme_mod( 'colornews_logo' );
-
-		if ( $logo_url ) {
-			$customizer_site_logo_id = attachment_url_to_postid( $logo_url );
-			set_theme_mod( 'custom_logo', $customizer_site_logo_id );
-
-			// Delete the old Site Logo theme_mod option.
-			remove_theme_mod( 'colornews_logo' );
-		}
-	}
-}
-
-add_action( 'after_setup_theme', 'colornews_site_logo_migrate' );
 ?>
