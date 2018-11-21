@@ -46,7 +46,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.1.5 2018-11-21 =
 * Added - Gutenberg compatibility
 * Remove - Backward compatible for header logo
 
