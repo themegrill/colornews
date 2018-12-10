@@ -46,6 +46,10 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix - Gallery padding for Gutenberg
+* Tweak - Add alt attributes to missed img tags
+
 = Version 1.1.5 2018-11-21 =
 * Added - Gutenberg compatibility
 * Remove - Backward compatible for header logo
