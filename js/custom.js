@@ -1,71 +1,84 @@
-jQuery(document).ready(function() {
-   jQuery('.search-icon').click(function() {
-      jQuery('.search-box').toggleClass('active');
-   });
+jQuery( document ).ready( function () {
+	jQuery( '.search-icon' ).click( function () {
+		jQuery( '.search-box' ).toggleClass( 'active' );
+	} );
 
-   jQuery('.close').click(function() {
-      jQuery('.search-box').removeClass('active');
-   });
+	jQuery( '.close' ).click( function () {
+		jQuery( '.search-box' ).removeClass( 'active' );
+	} );
 
-   /******** bx-slider ***********/
-   jQuery('.bxslider').bxSlider({
-      pagerCustom: '.bx-pager',
-      controls:false,
-      auto:true
-   });
+	/******** bx-slider ***********/
+	if ( typeof jQuery.fn.bxSlider !== 'undefined' ) {
+		jQuery( '.bxslider' ).bxSlider( {
+			pagerCustom : '.bx-pager',
+			controls    : false,
+			auto        : true
+		} );
 
-   jQuery('.carousel-slider').bxSlider({
-      minSlides: 5,
-      maxSlides: 8,
-      slideWidth: 133,
-      slideMargin: 7,
-      pager:false
-   });
+		jQuery( '.carousel-slider' ).bxSlider( {
+			minSlides   : 5,
+			maxSlides   : 8,
+			slideWidth  : 133,
+			slideMargin : 7,
+			pager       : false
+		} );
 
-   jQuery('.category-toggle-block').click(function() {
-      jQuery('.category-menu').slideToggle();
-   });
+		jQuery( '.gallery-images' ).bxSlider( {
+			mode           : 'fade',
+			speed          : 1500,
+			auto           : true,
+			pause          : 3000,
+			adaptiveHeight : true,
+			nextText       : '',
+			prevText       : '',
+			pager          : false
+		} );
+	}
 
-   jQuery('#site-navigation .menu-toggle').click(function() {
-      jQuery('#site-navigation .menu').slideToggle('slow');
-   });
+	jQuery( '.category-toggle-block' ).click( function () {
+		jQuery( '.category-menu' ).slideToggle();
+	} );
 
-   jQuery('#site-navigation .menu-item-has-children').append('<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>');
+	jQuery( '#site-navigation .menu-toggle' ).click( function () {
+		jQuery( '#site-navigation .menu' ).slideToggle( 'slow' );
+	} );
 
-   jQuery('#site-navigation .sub-toggle').click(function() {
-      jQuery(this).parent('.menu-item-has-children').children('ul.sub-menu').first().slideToggle('1000');
-      jQuery(this).children('.fa-angle-right').first().toggleClass('fa-angle-down');
-   });
+	jQuery( '#site-navigation .menu-item-has-children' ).append( '<span class="sub-toggle"> <i class="fa fa-angle-right"></i> </span>' );
 
-   // scroll up setting
-   jQuery('#scroll-up').hide();
-   jQuery(function () {
-      jQuery(window).scroll(function () {
-         if (jQuery(this).scrollTop() > 800) {
-            jQuery('#scroll-up').fadeIn();
-         } else {
-            jQuery('#scroll-up').fadeOut();
-         }
-      });
-      jQuery('a#scroll-up').click(function () {
-         jQuery('body,html').animate({
-            scrollTop: 0
-         }, 1400);
-         return false;
-      });
-   });
+	jQuery( '#site-navigation .sub-toggle' ).click( function () {
+		jQuery( this ).parent( '.menu-item-has-children' ).children( 'ul.sub-menu' ).first().slideToggle( '1000' );
+		jQuery( this ).children( '.fa-angle-right' ).first().toggleClass( 'fa-angle-down' );
+	} );
 
-   /* FitVids Setting */
-   jQuery('.fitvids-video').fitVids();
+	// scroll up setting
+	jQuery( '#scroll-up' ).hide();
+	jQuery( function () {
+		jQuery( window ).scroll( function () {
+			if ( jQuery( this ).scrollTop() > 800 ) {
+				jQuery( '#scroll-up' ).fadeIn();
+			} else {
+				jQuery( '#scroll-up' ).fadeOut();
+			}
+		} );
+		jQuery( 'a#scroll-up' ).click( function () {
+			jQuery( 'body,html' ).animate( {
+				scrollTop : 0
+			}, 1400 );
+			return false;
+		} );
+	} );
 
-});
-jQuery(document).on('click', '#site-navigation .menu li.menu-item-has-children > a', function(event) {
-    var menuClass = jQuery(this).parent('.menu-item-has-children');
-    if (! menuClass.hasClass('focus')){
-        menuClass.addClass('focus');
-        event.preventDefault();
-        menuClass.children('.sub-menu').css({
-           'display': 'block'
-        });
-    }
-  });
+	/* FitVids Setting */
+	jQuery( '.fitvids-video' ).fitVids();
+
+} );
+jQuery( document ).on( 'click', '#site-navigation .menu li.menu-item-has-children > a', function ( event ) {
+	var menuClass = jQuery( this ).parent( '.menu-item-has-children' );
+	if ( ! menuClass.hasClass( 'focus' ) ) {
+		menuClass.addClass( 'focus' );
+		event.preventDefault();
+		menuClass.children( '.sub-menu' ).css( {
+			'display' : 'block'
+		} );
+	}
+} );

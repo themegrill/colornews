@@ -76,11 +76,6 @@ function colornews_scripts() {
 	// enqueueing our custom script code
 	wp_enqueue_script( 'colornews-custom', COLORNEWS_JS_URL . '/custom.js', array( 'colornews-bxslider' ), '20150708', true );
 
-	// enqueue of custom post-format script
-	if( get_post_format() || is_archive() || is_search() || is_home() ) {
-		wp_enqueue_script( 'colornews-postformat-setting', COLORNEWS_JS_URL. '/post-format.js', array( 'jquery' ), '20150716', true );
-	}
-
 	wp_enqueue_script( 'colornews-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_enqueue_script( 'html5shiv', COLORNEWS_JS_URL . '/html5shiv.js', array(), '3.7.3', false );
