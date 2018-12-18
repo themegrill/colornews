@@ -71,6 +71,11 @@ jQuery( document ).ready( function () {
 	/* FitVids Setting */
 	jQuery( '.fitvids-video' ).fitVids();
 
+	if ( typeof jQuery.fn.magnificPopup !== 'undefined' ) {
+		jQuery( '.image-popup' ).magnificPopup( { type : 'image' } );
+	}
+
+
 } );
 jQuery( document ).on( 'click', '#site-navigation .menu li.menu-item-has-children > a', function ( event ) {
 	var menuClass = jQuery( this ).parent( '.menu-item-has-children' );
