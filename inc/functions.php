@@ -54,9 +54,7 @@ function colornews_scripts() {
 	wp_register_script( 'colornews-bxslider', COLORNEWS_JS_URL . '/jquery.bxslider/jquery.bxslider.min.js', array( 'jquery' ), '4.1.2', true );
 
 	if ( get_theme_mod( 'colornews_primary_sticky_menu', 0 ) == 1 ) {
-		wp_register_script( 'colornews-sticky-menu', COLORNEWS_JS_URL . '/sticky/jquery.sticky.js', array( 'jquery' ), '20150708', true );
-
-		wp_enqueue_script( 'colornews-sticky-menu-setting', COLORNEWS_JS_URL . '/sticky/sticky-setting.js', array( 'colornews-sticky-menu' ), '20150708', true );
+		wp_enqueue_script( 'colornews-sticky-menu', COLORNEWS_JS_URL . '/sticky/jquery.sticky.js', array( 'jquery' ), '20150708', true );
 	}
 
 	if ( get_theme_mod( 'colornews_breaking_news', 0 ) == 1 ) {

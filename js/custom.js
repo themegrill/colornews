@@ -71,8 +71,19 @@ jQuery( document ).ready( function () {
 	/* FitVids Setting */
 	jQuery( '.fitvids-video' ).fitVids();
 
+	// Featured image pop up.
 	if ( typeof jQuery.fn.magnificPopup !== 'undefined' ) {
 		jQuery( '.image-popup' ).magnificPopup( { type : 'image' } );
+	}
+
+	// For sticky menu.
+	if ( typeof jQuery.fn.sticky !== 'undefined' ) {
+		var wpAdminBar = jQuery( '#wpadminbar' );
+		if ( wpAdminBar.length ) {
+			jQuery( '.bottom-header-wrapper' ).sticky( { topSpacing : wpAdminBar.height() } );
+		} else {
+			jQuery( '.bottom-header-wrapper' ).sticky( { topSpacing : 0 } );
+		}
 	}
 
 
