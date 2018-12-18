@@ -58,8 +58,7 @@ function colornews_scripts() {
 	}
 
 	if ( get_theme_mod( 'colornews_breaking_news', 0 ) == 1 ) {
-		wp_register_script( 'colornews-tickerme', COLORNEWS_JS_URL . '/tickerme/tickerme.min.js', array( 'jquery' ), '20150708', true );
-		wp_enqueue_script( 'colornews-tickerme-setting', COLORNEWS_JS_URL . '/tickerme/ticker-setting.js', array( 'colornews-tickerme' ), '20150708', true );
+		wp_enqueue_script( 'colornews-tickerme', COLORNEWS_JS_URL . '/tickerme/tickerme.min.js', array( 'jquery' ), '20150708', true );
 	}
 
 	// register magnific popup

@@ -86,6 +86,14 @@ jQuery( document ).ready( function () {
 		}
 	}
 
+	// For ticker setting.
+	if ( typeof jQuery.fn.tickerme !== 'undefined' ) {
+		jQuery( '#typing' ).tickerme( {
+			fade_speed : 1500,
+			duration   : 5000,
+		} );
+	}
+
 
 } );
 jQuery( document ).on( 'click', '#site-navigation .menu li.menu-item-has-children > a', function ( event ) {
