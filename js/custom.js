@@ -23,7 +23,7 @@ jQuery( document ).ready( function () {
 			pager       : false
 		} );
 
-		jQuery( '.gallery-images' ).bxSlider( {
+		jQuery( '.blog .gallery-images, .archive .gallery-images, .search .gallery-images, .single-post .gallery-images' ).bxSlider( {
 			mode           : 'fade',
 			speed          : 1500,
 			auto           : true,
