@@ -50,6 +50,7 @@ and we will include it within the theme from next version update.
 * Fix - Gallery padding for Gutenberg
 * Tweak - Add alt attributes to missed img tags
 * Tweak - Utilize single custom JS file for required theme JS settings.
+* Recommend - Zakra theme
 
 = Version 1.1.5 2018-11-21 =
 * Added - Gutenberg compatibility
