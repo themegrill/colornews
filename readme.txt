@@ -46,7 +46,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.1.6 2019-01-14 =
 * Fix - Gallery padding for Gutenberg
 * Tweak - Add alt attributes to missed img tags
 * Tweak - Utilize single custom JS file for required theme JS settings.
