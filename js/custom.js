@@ -80,9 +80,15 @@ jQuery( document ).ready( function () {
 	if ( typeof jQuery.fn.sticky !== 'undefined' ) {
 		var wpAdminBar = jQuery( '#wpadminbar' );
 		if ( wpAdminBar.length ) {
-			jQuery( '.bottom-header-wrapper' ).sticky( { topSpacing : wpAdminBar.height() } );
+			jQuery( '.bottom-header-wrapper' ).sticky( {
+				topSpacing : wpAdminBar.height(),
+				zIndex     : 999
+			} );
 		} else {
-			jQuery( '.bottom-header-wrapper' ).sticky( { topSpacing : 0 } );
+			jQuery( '.bottom-header-wrapper' ).sticky( {
+				topSpacing : 0,
+				zIndex     : 999
+			} );
 		}
 	}
 
