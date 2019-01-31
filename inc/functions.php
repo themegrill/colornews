@@ -802,4 +802,19 @@ case 'trackback' :
 	}
 
 	add_action( 'after_setup_theme', 'colornews_custom_css_migrate' );
+
+	if ( ! function_exists( 'colornews_pingback_header' ) ) :
+
+		/**
+		 * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+		 */
+		function colornews_pingback_header() {
+			if ( is_singular() && pings_open() ) {
+				printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+			}
+		}
+
+	endif;
+
+	add_action( 'wp_head', 'colornews_pingback_header' );
 	?>
