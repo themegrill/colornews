@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ColorNews 1.1.7\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2019-03-21 10:42:39+00:00\n"
+"POT-Creation-Date: 2019-07-12 15:20:43+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,15 +85,15 @@ msgstr ""
 msgid "Category Menu"
 msgstr ""
 
-#: header.php:26
+#: header.php:33
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:131
+#: header.php:138
 msgid "Menu"
 msgstr ""
 
-#: header.php:146
+#: header.php:153
 msgid "&times;"
 msgstr ""
 
@@ -456,22 +456,6 @@ msgstr ""
 
 #: inc/admin/class-colornews-admin.php:588
 msgid "View Pro"
-msgstr ""
-
-#: inc/admin/class-colornews-new-theme-notice.php:66
-#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
-msgid ""
-"Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully "
-"compatible with Gutenberg, Elementor and other major page builders. Comes "
-"with %2$s to quickly setup your new website."
-msgstr ""
-
-#: inc/admin/class-colornews-new-theme-notice.php:70
-msgid "Check it out!"
-msgstr ""
-
-#: inc/admin/class-colornews-new-theme-notice.php:75
-msgid "10+ free starter sites"
 msgstr ""
 
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
