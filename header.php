@@ -30,7 +30,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 <?php do_action( 'colornews_before' ); ?>
 <div id="page" class="hfeed site">
 	<?php do_action( 'colornews_before_header' ); ?>
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'colornews' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'colornews' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="top-header-wrapper clearfix">

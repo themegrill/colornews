@@ -46,6 +46,10 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix   - Link for `skip-link` to content area.
+* Tweak - Update `screen-reader-text` CSS.
+
 = Version 1.1.8 2019-07-12 =
 * Remove - Removed dashboard message to align with the theme review guidelines
 
