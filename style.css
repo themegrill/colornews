@@ -1571,7 +1571,9 @@ Header CSS
 }
 
 #site-navigation ul > li:hover > .sub-menu,
-#site-navigation ul > li:hover > .children {
+#site-navigation ul > li:hover > .children,
+#site-navigation ul > li.focus > .sub-menu,
+#site-navigation ul > li.focus > .children {
 	top: 100%;
 	opacity: 1;
 	visibility: visible;
@@ -1588,7 +1590,8 @@ Header CSS
 	width: 100%;
 }
 
-#site-navigation .sub-menu > li:hover > ul {
+#site-navigation .sub-menu > li:hover > ul,
+#site-navigation .sub-menu > li.focus > ul {
 	left: 100%;
 }
 
