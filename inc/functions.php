@@ -593,228 +593,250 @@ if ( ! function_exists( 'colornews_social_menu' ) ) {
 /**************************************************************************************/
 
 if ( ! function_exists( 'colornews_comment' ) ) :
-/**
- * Template for comments and pingbacks.
- *
- * Used as a callback by wp_list_comments() for displaying the comments.
- */
-function colornews_comment( $comment, $args, $depth ) {
-$GLOBALS['comment'] = $comment;
-switch ( $comment->comment_type ) :
-case 'pingback' :
-case 'trackback' :
+	/**
+	 * Template for comments and pingbacks.
+	 *
+	 * Used as a callback by wp_list_comments() for displaying the comments.
+	 */
+	function colornews_comment( $comment, $args, $depth ) {
+		$GLOBALS['comment'] = $comment;
+		switch ( $comment->comment_type ) :
+			case 'pingback' :
+			case 'trackback' :
 // Display trackbacks differently than normal comments.
-?>
-<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-	<p><?php _e( 'Pingback:', 'colornews' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'colornews' ), '<span class="edit-link">', '</span>' ); ?></p>
-	<?php
-	break;
-	default :
-	// Proceed with normal comments.
-	global $post;
-	?>
-<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-	<article id="comment-<?php comment_ID(); ?>" class="comment">
-		<header class="comment-meta comment-author vcard">
-			<?php
-			echo get_avatar( $comment, 74 );
-			printf( '<div class="comment-author-link"><i class="fa fa-user"></i>%1$s%2$s</div>',
-				get_comment_author_link(),
-				// If current post author is also comment author, make it known visually.
-				( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'colornews' ) . '</span>' : ''
-			);
-			printf( '<div class="comment-date-time"><i class="fa fa-calendar-o"></i>%1$s</div>',
-				sprintf( __( '%1$s at %2$s', 'colornews' ), get_comment_date(), get_comment_time() )
-			);
-			printf( '<a class="comment-permalink" href="%1$s"><i class="fa fa-link"></i>Permalink</a>', esc_url( get_comment_link( $comment->comment_ID ) ) );
-			edit_comment_link();
-			?>
-		</header><!-- .comment-meta -->
-
-		<?php if ( '0' == $comment->comment_approved ) : ?>
-			<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'colornews' ); ?></p>
-		<?php endif; ?>
-
-		<section class="comment-content comment">
-			<?php comment_text(); ?>
-			<?php comment_reply_link( array_merge( $args, array(
-				'reply_text' => __( 'Reply', 'colornews' ),
-				'after'      => '',
-				'depth'      => $depth,
-				'max_depth'  => $args['max_depth'],
-			) ) ); ?>
-		</section><!-- .comment-content -->
-
-	</article><!-- #comment-## -->
-	<?php
-	break;
-	endswitch; // end comment_type check
-	}
-	endif;
-
-	/****************************************************************************************/
-
-	if ( ! function_exists( 'colornews_entry_meta' ) ) :
-		/**
-		 * Shows meta information of post.
-		 */
-		function colornews_entry_meta() {
-			if ( 'post' == get_post_type() ) :
-				echo '<div class="below-entry-meta">';
 				?>
-
-				<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php _e( 'Posted By: ', 'colornews' );
-							echo esc_html( get_the_author() ); ?></a></span></span>
-
+				<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+				<p><?php _e( 'Pingback:', 'colornews' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'colornews' ), '<span class="edit-link">', '</span>' ); ?></p>
 				<?php
-				if ( ! post_password_required() && comments_open() ) { ?>
-					<span class="comments"><?php comments_popup_link( __( '<i class="fa fa-comment"></i> 0 Comment', 'colornews' ), __( '<i class="fa fa-comment"></i> 1 Comment', 'colornews' ), __( '<i class="fa fa-comments"></i> % Comments', 'colornews' ) ); ?></span>
-				<?php }
-				$tags_list = get_the_tag_list( '<span class="tag-links"><i class="fa fa-tags"></i>', __( ', ', 'colornews' ), '</span>' );
-				if ( $tags_list ) {
-					echo $tags_list;
-				}
+				break;
+			default :
+				// Proceed with normal comments.
+				global $post;
+				?>
+				<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+				<article id="comment-<?php comment_ID(); ?>" class="comment">
+					<header class="comment-meta comment-author vcard">
+						<?php
+						echo get_avatar( $comment, 74 );
+						printf( '<div class="comment-author-link"><i class="fa fa-user"></i>%1$s%2$s</div>',
+							get_comment_author_link(),
+							// If current post author is also comment author, make it known visually.
+							( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'colornews' ) . '</span>' : ''
+						);
+						printf( '<div class="comment-date-time"><i class="fa fa-calendar-o"></i>%1$s</div>',
+							sprintf( __( '%1$s at %2$s', 'colornews' ), get_comment_date(), get_comment_time() )
+						);
+						printf( '<a class="comment-permalink" href="%1$s"><i class="fa fa-link"></i>Permalink</a>', esc_url( get_comment_link( $comment->comment_ID ) ) );
+						edit_comment_link();
+						?>
+					</header><!-- .comment-meta -->
 
-				edit_post_link( __( 'Edit', 'colornews' ), '<span class="edit-link"><i class="fa fa-edit"></i>', '</span>' );
+					<?php if ( '0' == $comment->comment_approved ) : ?>
+						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'colornews' ); ?></p>
+					<?php endif; ?>
 
-				echo '</div>';
-			endif;
-		}
-	endif;
+					<section class="comment-content comment">
+						<?php comment_text(); ?>
+						<?php comment_reply_link( array_merge( $args, array(
+							'reply_text' => __( 'Reply', 'colornews' ),
+							'after'      => '',
+							'depth'      => $depth,
+							'max_depth'  => $args['max_depth'],
+						) ) ); ?>
+					</section><!-- .comment-content -->
 
-	/****************************************************************************************/
+				</article><!-- #comment-## -->
+				<?php
+				break;
+		endswitch; // end comment_type check
+	}
+endif;
 
-	/*
-	 * Support for Google updated/published date
+/****************************************************************************************/
+
+if ( ! function_exists( 'colornews_entry_meta' ) ) :
+	/**
+	 * Shows meta information of post.
 	 */
-	if ( ! function_exists( 'colornews_published_date' ) ) :
+	function colornews_entry_meta() {
+		if ( 'post' == get_post_type() ) :
+			echo '<div class="below-entry-meta">';
+			?>
 
-		function colornews_published_date() {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-			if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-				$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
+			<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php _e( 'Posted By: ', 'colornews' );
+						echo esc_html( get_the_author() ); ?></a></span></span>
+
+			<?php
+			if ( ! post_password_required() && comments_open() ) { ?>
+				<span class="comments"><?php comments_popup_link( __( '<i class="fa fa-comment"></i> 0 Comment', 'colornews' ), __( '<i class="fa fa-comment"></i> 1 Comment', 'colornews' ), __( '<i class="fa fa-comments"></i> % Comments', 'colornews' ) ); ?></span>
+			<?php }
+			$tags_list = get_the_tag_list( '<span class="tag-links"><i class="fa fa-tags"></i>', __( ', ', 'colornews' ), '</span>' );
+			if ( $tags_list ) {
+				echo $tags_list;
 			}
-			$time_string = sprintf( $time_string,
-				esc_attr( get_the_date( 'c' ) ),
-				esc_html( get_the_date() ),
-				esc_attr( get_the_modified_date( 'c' ) ),
-				esc_html( get_the_modified_date() )
-			);
-			printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark">%3$s</a></span>', 'colornews' ),
-				esc_url( get_permalink() ),
-				esc_attr( get_the_time() ),
-				$time_string
-			);
+
+			edit_post_link( __( 'Edit', 'colornews' ), '<span class="edit-link"><i class="fa fa-edit"></i>', '</span>' );
+
+			echo '</div>';
+		endif;
+	}
+endif;
+
+/****************************************************************************************/
+
+/*
+ * Support for Google updated/published date
+ */
+if ( ! function_exists( 'colornews_published_date' ) ) :
+
+	function colornews_published_date() {
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+			$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 		}
-
-	endif;
-
-	/**************************************************************************************/
-
-	/*
-	 * Creating responsive video for posts/pages
-	 */
-	if ( ! function_exists( 'colornews_responsive_video' ) ) :
-		function colornews_responsive_video( $html, $url, $attr, $post_ID ) {
-			return '<div class="fitvids-video">' . $html . '</div>';
-		}
-
-		add_filter( 'embed_oembed_html', 'colornews_responsive_video', 10, 4 );
-	endif;
-
-	/**************************************************************************************/
-
-	/*
-	 * Use of the hooks for Category Color in the archive titles
-	 */
-	function colornews_colored_category_title( $title ) {
-		$color_value        = colornews_category_color( get_cat_id( $title ) );
-		$color_border_value = colornews_category_color( get_cat_id( $title ) );
-		if ( ! empty( $color_value ) ) {
-			return '<h1 class="page-title category-title" style="border-bottom:3px solid ' . $color_border_value . ';' . 'color:' . $color_value . '">' . $title . '</h1>';
-		} else {
-			return '<h1 class="page-title">' . $title . '</h1>';
-		}
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() ),
+			esc_attr( get_the_modified_date( 'c' ) ),
+			esc_html( get_the_modified_date() )
+		);
+		printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark">%3$s</a></span>', 'colornews' ),
+			esc_url( get_permalink() ),
+			esc_attr( get_the_time() ),
+			$time_string
+		);
 	}
 
-	function colornews_category_title_function( $category_title ) {
-		add_filter( 'single_cat_title', 'colornews_colored_category_title' );
+endif;
+
+/**************************************************************************************/
+
+/*
+ * Creating responsive video for posts/pages
+ */
+if ( ! function_exists( 'colornews_responsive_video' ) ) :
+	function colornews_responsive_video( $html, $url, $attr, $post_ID ) {
+		return '<div class="fitvids-video">' . $html . '</div>';
 	}
 
-	add_action( 'colornews_category_title', 'colornews_category_title_function' );
+	add_filter( 'embed_oembed_html', 'colornews_responsive_video', 10, 4 );
+endif;
 
-	/**************************************************************************************/
+/**************************************************************************************/
+
+/*
+ * Use of the hooks for Category Color in the archive titles
+ */
+function colornews_colored_category_title( $title ) {
+	$color_value        = colornews_category_color( get_cat_id( $title ) );
+	$color_border_value = colornews_category_color( get_cat_id( $title ) );
+	if ( ! empty( $color_value ) ) {
+		return '<h1 class="page-title category-title" style="border-bottom:3px solid ' . $color_border_value . ';' . 'color:' . $color_value . '">' . $title . '</h1>';
+	} else {
+		return '<h1 class="page-title">' . $title . '</h1>';
+	}
+}
+
+function colornews_category_title_function( $category_title ) {
+	add_filter( 'single_cat_title', 'colornews_colored_category_title' );
+}
+
+add_action( 'colornews_category_title', 'colornews_category_title_function' );
+
+/**************************************************************************************/
+
+/**
+ * Making the theme Woocommrece compatible
+ */
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
+remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
+
+add_filter( 'woocommerce_show_page_title', '__return_false' );
+
+add_action( 'woocommerce_before_main_content', 'colornews_wrapper_start', 10 );
+add_action( 'woocommerce_after_main_content', 'colornews_wrapper_end', 10 );
+add_action( 'woocommerce_sidebar', 'colornews_get_sidebar', 10 );
+
+function colornews_wrapper_start() {
+	echo '<div id="main" class="clearfix"><div class="tg-container"><div class="tg-inner-wrap clearfix"><div id="main-content-section clearfix"><div id="primary">';
+}
+
+function colornews_wrapper_end() {
+	echo '</div>';
+}
+
+function colornews_get_sidebar() {
+	colornews_sidebar_select();
+	echo '</div></div></div></div>';
+}
+
+// Displays the site logo
+if ( ! function_exists( 'colornews_the_custom_logo' ) ) {
+	/**
+	 * Displays the optional custom logo.
+	 */
+	function colornews_the_custom_logo() {
+		if ( function_exists( 'the_custom_logo' ) ) {
+			the_custom_logo();
+		}
+	}
+}
+
+/**
+ * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
+ */
+function colornews_custom_css_migrate() {
+	if ( function_exists( 'wp_update_custom_css_post' ) ) {
+		$custom_css = get_theme_mod( 'colornews_custom_css' );
+		if ( $custom_css ) {
+			$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
+			$return   = wp_update_custom_css_post( $core_css . $custom_css );
+			if ( ! is_wp_error( $return ) ) {
+				// Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
+				remove_theme_mod( 'colornews_custom_css' );
+			}
+		}
+	}
+}
+
+add_action( 'after_setup_theme', 'colornews_custom_css_migrate' );
+
+if ( ! function_exists( 'colornews_pingback_header' ) ) :
 
 	/**
-	 * Making the theme Woocommrece compatible
+	 * Add a pingback url auto-discovery header for single posts, pages, or attachments.
 	 */
-	remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-	remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
-	remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
-	remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
-
-	add_filter( 'woocommerce_show_page_title', '__return_false' );
-
-	add_action( 'woocommerce_before_main_content', 'colornews_wrapper_start', 10 );
-	add_action( 'woocommerce_after_main_content', 'colornews_wrapper_end', 10 );
-	add_action( 'woocommerce_sidebar', 'colornews_get_sidebar', 10 );
-
-	function colornews_wrapper_start() {
-		echo '<div id="main" class="clearfix"><div class="tg-container"><div class="tg-inner-wrap clearfix"><div id="main-content-section clearfix"><div id="primary">';
-	}
-
-	function colornews_wrapper_end() {
-		echo '</div>';
-	}
-
-	function colornews_get_sidebar() {
-		colornews_sidebar_select();
-		echo '</div></div></div></div>';
-	}
-
-	// Displays the site logo
-	if ( ! function_exists( 'colornews_the_custom_logo' ) ) {
-		/**
-		 * Displays the optional custom logo.
-		 */
-		function colornews_the_custom_logo() {
-			if ( function_exists( 'the_custom_logo' ) ) {
-				the_custom_logo();
-			}
+	function colornews_pingback_header() {
+		if ( is_singular() && pings_open() ) {
+			printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
 		}
 	}
 
-	/**
-	 * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
-	 */
-	function colornews_custom_css_migrate() {
-		if ( function_exists( 'wp_update_custom_css_post' ) ) {
-			$custom_css = get_theme_mod( 'colornews_custom_css' );
-			if ( $custom_css ) {
-				$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
-				$return   = wp_update_custom_css_post( $core_css . $custom_css );
-				if ( ! is_wp_error( $return ) ) {
-					// Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
-					remove_theme_mod( 'colornews_custom_css' );
-				}
-			}
+endif;
+
+add_action( 'wp_head', 'colornews_pingback_header' );
+
+/**
+ * Compare user's current version of plugin.
+ */
+if ( ! function_exists( 'colornews_plugin_version_compare' ) ) {
+	function colornews_plugin_version_compare( $plugin_slug, $version_to_compare ) {
+
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
 		}
+
+		$installed_plugins = get_plugins();
+
+		// Plugin not installed.
+		if ( ! isset( $installed_plugins[ $plugin_slug ] ) ) {
+			return false;
+		}
+
+		$tdi_user_version = $installed_plugins[ $plugin_slug ]['Version'];
+
+		return version_compare( $tdi_user_version, $version_to_compare, '<' );
 	}
-
-	add_action( 'after_setup_theme', 'colornews_custom_css_migrate' );
-
-	if ( ! function_exists( 'colornews_pingback_header' ) ) :
-
-		/**
-		 * Add a pingback url auto-discovery header for single posts, pages, or attachments.
-		 */
-		function colornews_pingback_header() {
-			if ( is_singular() && pings_open() ) {
-				printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
-			}
-		}
-
-	endif;
-
-	add_action( 'wp_head', 'colornews_pingback_header' );
-	?>
+}
