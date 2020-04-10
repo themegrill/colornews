@@ -219,6 +219,7 @@ $colornews_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-colornews-admin.php';
 	require get_template_directory() . '/inc/admin/class-colornews-tdi-notice.php';
+	require get_template_directory() . '/inc/admin/class-colornews-theme-review-notice.php';
 }
 
 /**
