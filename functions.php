@@ -220,6 +220,7 @@ define( 'COLORNEWS_THEME_VERSION', $colornews_theme->get( 'Version' ) );
 if ( is_admin() ) {
 	require( COLORNEWS_ADMIN_DIR . '/class-colornews-admin.php' );
 	require( COLORNEWS_ADMIN_DIR . '/class-colornews-tdi-notice.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-notice.php' );
 	require( COLORNEWS_ADMIN_DIR . '/class-colornews-welcome-notice.php' );
 	require( COLORNEWS_ADMIN_DIR . '/class-colornews-theme-review-notice.php' );
 }
