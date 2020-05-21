@@ -210,8 +210,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 /**
  * Assign the ColorNews version to a variable.
  */
-$theme             = wp_get_theme( 'colornews' );
-$colornews_version = $theme['Version'];
+$colornews_theme = wp_get_theme( 'colornews' );
+
+define( 'COLORNEWS_THEME_VERSION', $colornews_theme->get( 'Version' ) );
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
