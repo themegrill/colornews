@@ -217,8 +217,9 @@ $colornews_version = $theme['Version'];
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
  */
 if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/class-colornews-admin.php';
-	require get_template_directory() . '/inc/admin/class-colornews-tdi-notice.php';
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-admin.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-tdi-notice.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-welcome-notice.php' );
 }
 
 /**
