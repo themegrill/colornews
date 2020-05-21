@@ -50,7 +50,7 @@ class Colornews_Welcome_Notice {
 					<h2 class="colornews-message__heading">
 						<?php
 						printf(
-						/* translators: 1: welcome page link starting html tag, 2: welcome page link ending html tag. */
+							/* translators: 1: welcome page link starting html tag, 2: welcome page link ending html tag. */
 							esc_html__( 'Welcome! Thank you for choosing Colornews! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'colornews' ),
 							'<a href="' . esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ) . '">',
 							'</a>'
