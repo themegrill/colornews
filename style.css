@@ -1947,8 +1947,8 @@ sidebar layout CSS
 }
 
 .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull,.no-sidebar.boxed-layout #primary .entry-content > .alignfull {
-	margin-left: -40px;
-	margin-right: -40px;
+	margin-left: -30px;
+	margin-right: -30px;
 }
 
 .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull.wp-block-cover-image,

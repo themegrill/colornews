@@ -25,11 +25,11 @@
 }
 
 .wp-block {
-	max-width: 1160px;
+	max-width: 1100px;
 }
 
 .editor-styles-wrapper .wp-block[data-align="wide"] {
-	max-width: 1349px;
+	max-width: 1160px;
 }
 
 .editor-styles-wrapper h1,
