@@ -88,6 +88,14 @@ function colornews_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'colornews_scripts' );
 
+function colornews_block_editor_styles() {
+	wp_enqueue_style( 'colornews-editor-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300,700,900' );
+	wp_enqueue_style( 'colornews-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'colornews_block_editor_styles', 1, 1 );
+
+
 // function to enqueue the image uploader script
 function colornews_image_uploader() {
 	wp_enqueue_media();
