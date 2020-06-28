@@ -97,13 +97,13 @@ td {
 
 blockquote:before,
 blockquote:after,
-q:before,
-q:after {
+p:before,
+p:after {
 	content: "";
 }
 
 blockquote,
-q {
+p{
 	quotes: "" "";
 }
 
@@ -167,12 +167,15 @@ i {
 	font-style: italic;
 }
 
-blockquote {
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large,
+.wp-block-quote.has-text-align-right {
 	margin: 0 15px;
 	font-size: 20px;
 	font-style: italic;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	font-weight: 300;border-left: 0;
 }
 
 address {
@@ -183,12 +186,13 @@ pre {
 	background: #eeeeee;
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
-	font-size: 1.5rem;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
 	padding: 1.6em;
+	border: 1px solid #eeeeee;
+	white-space: pre-wrap;
 }
 
 code,
@@ -263,7 +267,7 @@ h6 {
 Elements
 --------------------------------------------------------------*/
 
-hr {
+hr , .wp-block-separator{
 	background-color: #cccccc;
 	border: 0;
 	height: 1px;
@@ -317,11 +321,9 @@ table {
 
 th {
 	font-weight: bold;
-	border: 1px solid #cccccc;
-	padding: 5px 10px;
 }
 
-td {
+th, td, .wp-block-table th, .wp-block-table td {
 	border: 1px solid #cccccc;
 	padding: 5px 10px;
 }
@@ -1914,22 +1916,45 @@ sidebar layout CSS
 	overflow: hidden;
 }
 
-.no-sidebar-full-width .alignfull,
-.no-sidebar .alignfull {
+.no-sidebar-full-width #primary .entry-content > .alignfull,
+.no-sidebar #primary .entry-content > .alignfull {
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
 	max-width: unset;
 }
+.no-sidebar-full-width #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar-full-width #primary .entry-content > .alignfull.wp-block-cover-image,.no-sidebar #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
+}
 
-.no-sidebar-full-width .alignwide,
-.no-sidebar .alignwide {
+.no-sidebar-full-width #primary .entry-content > .alignwide,
+.no-sidebar #primary .entry-content > .alignwide {
 	margin-left: -100px;
 	margin-right: -100px;
 	max-width: unset;
 }
 
-.no-sidebar-full-width .alignfull img,
-.no-sidebar .alignfull img {
+.no-sidebar-full-width.boxed #primary .entry-content > .alignwide,
+.no-sidebar.boxed #primary .entry-content > .alignwide {
+	margin-left: 0;
+	margin-right: 0;
+	max-width: unset;
+	width: unset;
+}
+
+.no-sidebar-full-width.boxed #main,
+.no-sidebar.boxed #main {
+	overflow: hidden;
+}
+
+.no-sidebar-full-width.boxed #primary .entry-content > .alignfull,.no-sidebar.boxed #primary .entry-content > .alignfull {
+	margin-left: -40px;
+	margin-right: -40px;
+}
+
+.no-sidebar-full-width.boxed #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar-full-width.boxed #primary .entry-content > .alignfull.wp-block-cover-image,
+.no-sidebar.box #primary .entry-content > .alignfull.wp-block-cover,
+.no-sidebar.box #primary .entry-content > .alignfull.wp-block-cover-image {
+	width: unset;
 	max-width: unset;
 }
 
