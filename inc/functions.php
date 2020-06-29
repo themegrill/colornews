@@ -724,7 +724,11 @@ endif;
  */
 if ( ! function_exists( 'colornews_responsive_video' ) ) :
 	function colornews_responsive_video( $html, $url, $attr, $post_ID ) {
-		return '<div class="fitvids-video">' . $html . '</div>';
+		if ( ! current_theme_supports( 'responsive-embeds' ) ) {
+			return '<div class="fitvids-video">' . $html . '</div>';
+		}
+
+		return $html;
 	}
 
 	add_filter( 'embed_oembed_html', 'colornews_responsive_video', 10, 4 );

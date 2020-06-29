@@ -531,6 +531,7 @@ Alignments
 .aligncenter {
 	clear: both;
 	display: block;
+	text-align: center;
 	margin: 0 auto;
 }
 
@@ -3393,8 +3394,8 @@ a#scroll-up:hover {
 	}
 	.no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull,
 	.no-sidebar.boxed-layout #primary .entry-content > .alignfull {
-		margin-left: -40px;
-		margin-right: -40px;
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 	.no-sidebar #primary .entry-content > .alignfull {
 		margin-left: -15px;
