@@ -1949,8 +1949,8 @@ sidebar layout CSS
 }
 
 .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull,.no-sidebar.boxed-layout #primary .entry-content > .alignfull {
-	margin-left: -10px;
-	margin-right: -10px;
+	margin-left: -30px;
+	margin-right: -30px;
 }
 
 .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignfull.wp-block-cover-image,
@@ -3035,8 +3035,8 @@ a#scroll-up:hover {
 		margin-right: -50px;
 	}
 	.no-sidebar #primary .entry-content > .alignfull {
-		margin-left: -30px;
-		margin-right: -30px;
+		margin-left: -15px;
+		margin-right: -15px;
 	}
 }
 
