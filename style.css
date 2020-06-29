@@ -1932,6 +1932,7 @@ sidebar layout CSS
 	margin-left: -50px;
 	margin-right: -50px;
 	max-width: unset;
+	width: unset;
 }
 
 .no-sidebar-full-width.boxed-layout #primary .entry-content > .alignwide,
