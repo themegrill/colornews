@@ -97,13 +97,13 @@ td {
 
 blockquote:before,
 blockquote:after,
-p:before,
-p:after {
+q:before,
+q:after {
 	content: "";
 }
 
 blockquote,
-p{
+q{
 	quotes: "" "";
 }
 
