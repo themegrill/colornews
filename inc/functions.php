@@ -88,6 +88,14 @@ function colornews_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'colornews_scripts' );
 
+function colornews_block_editor_styles() {
+	wp_enqueue_style( 'colornews-editor-googlefonts', '//fonts.googleapis.com/css?family=Roboto:400,300,700,900' );
+	wp_enqueue_style( 'colornews-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'colornews_block_editor_styles', 1, 1 );
+
+
 // function to enqueue the image uploader script
 function colornews_image_uploader() {
 	wp_enqueue_media();
@@ -716,7 +724,11 @@ endif;
  */
 if ( ! function_exists( 'colornews_responsive_video' ) ) :
 	function colornews_responsive_video( $html, $url, $attr, $post_ID ) {
-		return '<div class="fitvids-video">' . $html . '</div>';
+		if ( ! current_theme_supports( 'responsive-embeds' ) ) {
+			return '<div class="fitvids-video">' . $html . '</div>';
+		}
+
+		return $html;
 	}
 
 	add_filter( 'embed_oembed_html', 'colornews_responsive_video', 10, 4 );
