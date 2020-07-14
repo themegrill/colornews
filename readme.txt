@@ -45,7 +45,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.0 2020-07-14 =
 * Enhancement - Gutenberg compatibility.
 * Enhancement - Update protocol to prevent not secure issue.
 * Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
