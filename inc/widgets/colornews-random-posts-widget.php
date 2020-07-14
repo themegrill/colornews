@@ -93,7 +93,7 @@ class colornews_random_posts_widget extends WP_Widget {
 									$image           .= colornews_colored_category_return( 0 );
 									echo $image;
 								} else { ?>
-									<img src="<?php echo get_template_directory_uri(); ?>/img/random-placeholder.png">
+									<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/random-placeholder.png">
 									<?php echo colornews_colored_category_return( 0 ); ?>
 								<?php }
 								?>
