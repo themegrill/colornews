@@ -452,7 +452,7 @@ if ( ! function_exists( 'colornews_footer_copyright' ) ) :
 	function colornews_footer_copyright() {
 		$site_link = '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>';
 
-		$wp_link = '<a href="http://wordpress.org" target="_blank" title="' . esc_attr__( 'WordPress', 'colornews' ) . '"><span>' . __( 'WordPress', 'colornews' ) . '</span></a>';
+		$wp_link = '<a href="https://wordpress.org" target="_blank" title="' . esc_attr__( 'WordPress', 'colornews' ) . '"><span>' . __( 'WordPress', 'colornews' ) . '</span></a>';
 
 		$tg_link = '<a href="https://themegrill.com/themes/colornews" target="_blank" title="' . esc_attr__( 'ThemeGrill', 'colornews' ) . '" rel="author"><span>' . __( 'ThemeGrill', 'colornews' ) . '</span></a>';
 
