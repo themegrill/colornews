@@ -47,9 +47,9 @@ and we will include it within the theme from next version update.
 
 == Changelog ==
 = TBD =
+* Enhancement - Gutenberg compatibility.
 * Enhancement - Update protocol to prevent not secure issue.
 * Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
-* Enhancement - Gutenberg compatibility.
 
 = Version 1.1.9 2020-02-20 =
 * Fix   - Link for `skip-link` to content area.
