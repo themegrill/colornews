@@ -9,7 +9,6 @@ External resources linked to the theme.
 Resources packed within the theme.
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
-* Images in the screenshot is from http://pixabay.com/ link. License: CC0 Public Domain
 * HTML5 Shiv @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
 * Bxslider by Steven Wanderski released under the MIT license
 * Stickyjs by Anthony Garand | MIT Licensed
@@ -48,6 +47,12 @@ and we will include it within the theme from next version update.
 == Changelog ==
 = TBD =
 * Tweak - Add and improve theme-related notices.
+
+= Version 1.2.0 2020-07-14 =
+* Enhancement - Gutenberg compatibility.
+* Enhancement - Update protocol to prevent not secure issue.
+* Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
+* Remove - Unrequired deprecated demo config for theme demo lists.
 
 = Version 1.1.9 2020-02-20 =
 * Fix   - Link for `skip-link` to content area.
