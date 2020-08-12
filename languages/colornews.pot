@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: ColorNews 1.2.0\n"
+"Project-Id-Version: ColorNews 1.2.1\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-07-14 11:38:14+00:00\n"
+"POT-Creation-Date: 2020-08-12 06:32:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,32 +12,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
-
-#: inc/admin/class-colornews-admin.php:401
-msgid "1"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:431
-#: inc/admin/class-colornews-admin.php:432
-msgid "3"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:436
-#: inc/admin/class-colornews-admin.php:437
-msgid "4"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:421
-msgid "10"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:422
-msgid "18"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:402
-msgid "21"
-msgstr ""
 
 #: 404.php:30
 msgid "404"
@@ -77,7 +51,7 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:115 inc/admin/class-colornews-admin.php:425
+#: functions.php:115
 msgid "Social Menu"
 msgstr ""
 
@@ -97,394 +71,133 @@ msgstr ""
 msgid "&times;"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:36
-#: inc/admin/class-colornews-admin.php:118
-msgid "About"
+#: inc/admin/class-colornews-admin.php:38
+msgid "Processing..."
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:77
-msgid "Action failed. Please refresh the page and retry."
+#: inc/admin/class-colornews-dashboard.php:34
+#. translators: %s: Theme Name.
+msgid "%s Options"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:81
-msgid "Cheatin&#8217; huh?"
+#: inc/admin/class-colornews-dashboard.php:56
+#. translators: %s: Theme version.
+msgid "ColorNews %s"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:95
-msgid "Dismiss"
+#: inc/admin/class-colornews-dashboard.php:65
+#. translators: %s: Theme Name.
+msgid "Welcome to %s!"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:96
-msgid ""
-"Welcome! Thank you for choosing colornews! To fully take advantage of the "
-"best our theme can offer please make sure you visit our %swelcome page%s."
+#: inc/admin/class-colornews-dashboard.php:71
+#. translators: %s: Theme Name.
+msgid "Important links to get you started with %s"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:98
-msgid "Get started with colornews"
+#: inc/admin/class-colornews-dashboard.php:77
+msgid "Get Started"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:133
-msgid "Theme Info"
+#: inc/admin/class-colornews-dashboard.php:80
+msgid "Learn Basics"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:135
-msgid "View Demo"
+#: inc/admin/class-colornews-dashboard.php:85
+msgid "Next Steps"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:137
-#: inc/admin/class-colornews-admin.php:231 inc/customizer.php:56
-msgid "View PRO version"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:139
-msgid "Rate this theme"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:154
-msgid "Supported Plugins"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:162
-msgid "Free Vs Pro"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:170
-msgid "Changelog"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:204
-msgid "Theme Customizer"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:205
-msgid "All Theme Options are available via Customize screen."
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:207
-msgid "Customize"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:212
-#: inc/admin/class-colornews-admin.php:215
+#: inc/admin/class-colornews-dashboard.php:87
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:213
-msgid "Please view our documentation page to setup the theme."
+#: inc/admin/class-colornews-dashboard.php:88
+msgid "Starter Demos"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:220
+#: inc/admin/class-colornews-dashboard.php:89
+msgid "Premium Version"
+msgstr ""
+
+#: inc/admin/class-colornews-dashboard.php:94
+msgid "Further Actions"
+msgstr ""
+
+#: inc/admin/class-colornews-dashboard.php:96
+#: inc/admin/class-colornews-theme-review-notice.php:95
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:221
-msgid "Please put it in our dedicated support forum."
+#: inc/admin/class-colornews-dashboard.php:97
+msgid "Leave a review"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:223
-#: inc/admin/class-colornews-admin.php:395
-msgid "Support"
+#: inc/admin/class-colornews-notice.php:56
+#: inc/admin/class-colornews-notice.php:75
+#: inc/admin/class-colornews-welcome-notice.php:76
+msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:228
-msgid "Need more features?"
+#: inc/admin/class-colornews-notice.php:60
+#: inc/admin/class-colornews-notice.php:79
+#: inc/admin/class-colornews-welcome-notice.php:80
+msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:229
-#: inc/admin/class-colornews-admin.php:383
-msgid "Upgrade to PRO version for more exciting features."
+#: inc/admin/class-colornews-theme-review-notice.php:68
+#. Translators: %1$s current user display name.
+msgid ""
+"Howdy, %1$s! It seems that you have been using this theme for more than 15 "
+"days. We hope you are happy with everything that the theme has to offer. If "
+"you can spare a minute, please help us by leaving a 5-star review on "
+"WordPress.org.  By spreading the love, we can continue to develop new "
+"amazing features in the future, for free!"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:236
-msgid "Got sales related question?"
+#: inc/admin/class-colornews-theme-review-notice.php:80
+msgid "Sure"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:237
-msgid "Please send it via our sales contact page."
+#: inc/admin/class-colornews-theme-review-notice.php:85
+#: inc/admin/class-colornews-upgrade-notice.php:95
+msgid "Maybe later"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:239 sidebar-left.php:24 sidebar.php:24
-msgid "Contact Page"
+#: inc/admin/class-colornews-theme-review-notice.php:90
+msgid "I already did"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:246
-#: inc/admin/class-colornews-admin.php:254
-msgid "Translate"
+#: inc/admin/class-colornews-upgrade-notice.php:90
+#. Translators: %1$s current user display name., %2$s this theme name., %3$s
+#. discount coupon code., %4$s discount percentage.
+msgid "Upgrade to pro"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:250
-msgid "Click below to translate this theme into your own language."
+#: inc/admin/class-colornews-upgrade-notice.php:100
+msgid "Got pre sales queries?"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:266
-msgid "Return to Updates"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:266
-msgid "Return to Dashboard &rarr; Updates"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:269
-msgid "Go to Dashboard &rarr; Home"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:269
-msgid "Go to Dashboard"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:286
-msgid "View changelog below:"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:341
-msgid "This theme recommends following plugins:"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:344
-msgid "Social Icons"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:345
-#: inc/admin/class-colornews-admin.php:349
-msgid " by ThemeGrill"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:348
-msgid "Easy Social Sharing"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:352
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:355
-msgid "WP-PageNavi"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:358
-msgid "WooCommerce"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:361
-msgid "Polylang"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:362
-#: inc/admin/class-colornews-admin.php:366
-msgid "Fully Compatible in Pro Version"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:365
-msgid "WMPL"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:388
-msgid "Features"
+#: inc/admin/class-colornews-welcome-notice.php:25
+msgid "Get started with ColorNews"
 msgstr ""
 
 #. Theme Name of the plugin/theme
 msgid "ColorNews"
 msgstr ""
 
-#: inc/admin/class-colornews-admin.php:390
-msgid "ColorNews Pro"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:396
-msgid "Forum"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:397
-msgid "Forum + Emails/Support Ticket"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:400
-msgid "Color Options"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:405 inc/customizer.php:465
-msgid "Primary color option"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:410
-msgid "Font Size Options"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:415
-msgid "Google Fonts Options"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:417
-msgid "600+"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:420
-msgid "Custom Widgets"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:430
-msgid "Custom Menu"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:435
-msgid "Footer Sidebar"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:440 inc/customizer.php:362
-msgid "Site Layout"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:445
-msgid "Options in Breaking News"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:450
-msgid "Unique Post System"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:455 inc/customizer.php:516
-msgid "Related Posts"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:460
-msgid "Author Biography"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:465
-msgid "Author Biography with Social Icons"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:470
-msgid "Footer Copyright Editor"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:475
-#: inc/widgets/colornews-125x125-advertisement-widget.php:11
-msgid "TG: 125x125 Advertisement"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:480
-#: inc/widgets/colornews-300x250-advertisement-widget.php:14
-msgid "TG: 300x250 Advertisement"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:485
-#: inc/widgets/colornews-728x90-advertisement-widget.php:14
-msgid "TG: 728x90 Advertisement"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:490
-msgid "TG: Videos"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:495
-msgid "TG: Tabbed Widget"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:500
-#: inc/widgets/colornews-custom-tag-widget.php:10
-msgid "TG: Custom Tag Cloud"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:505
-#: inc/widgets/colornews-popular-posts-widget.php:14
-msgid "TG: Popular Posts Widget"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:510
-#: inc/widgets/colornews-random-posts-widget.php:14
-msgid "TG: Random Posts Widget"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:515
-#: inc/widgets/colornews-featured-post-style-one-widget.php:14
-msgid "TG: Featured Post (Style 1)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:520
-msgid "TG: Featured Post (Style 2)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:525
-msgid "TG: Featured Post (Style 3)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:530
-msgid "TG: Featured Post (Style 4)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:535
-msgid "TG: Featured Posts (Style 5)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:540
-msgid "TG: Featured Posts (Style 6)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:545
-msgid "TG: Featured Posts (Style 7)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:550
-msgid "TG: Featured Posts (Style 8)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:555
-msgid "TG: Featured Posts (Style 9)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:560
-msgid "TG: Featured Posts (Style 10)"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:565 inc/customizer.php:574
-msgid "Category Color Options"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:570
-msgid "WPML Compatible"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:575
-msgid "Polylang Compatible"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:580
-msgid "WooCommerce Compatible"
-msgstr ""
-
-#: inc/admin/class-colornews-admin.php:588
-msgid "View Pro"
-msgstr ""
-
-#: inc/admin/class-colornews-tdi-notice.php:40
-#. Translators: 1: Notice text 2: Plugin Name 3. CTA
+#: inc/admin/class-colornews-welcome-notice.php:53
+#. translators: 1: welcome page link starting html tag, 2: welcome page link
+#. ending html tag.
 msgid ""
-"%1$s: Please update \"%2$s\" plugin to latest version to make sure your "
-"site is all secure. We released a security patch in the latest version of "
-"this plugin. %3$s"
+"Welcome! Thank you for choosing ColorNews! To fully take advantage of the "
+"best our theme can offer please make sure you visit our %1$swelcome "
+"page%2$s."
 msgstr ""
 
-#: inc/admin/class-colornews-tdi-notice.php:41
-msgid "Action Required"
-msgstr ""
-
-#: inc/admin/class-colornews-tdi-notice.php:42
-#: inc/admin/class-colornews-tdi-notice.php:54
-msgid "ThemeGrill Demo Importer"
-msgstr ""
-
-#: inc/admin/class-colornews-tdi-notice.php:47
-#. Translators: 1: CTA link 2: CTA text
-msgid "Update Now"
-msgstr ""
-
-#: inc/admin/class-colornews-tdi-notice.php:53
-#. Translators: 1: Plugin name
+#: inc/admin/class-colornews-welcome-notice.php:62
 msgid ""
-"Also, if the purpose of importing the demo via \"%1$s\" plugin is "
-"fulfilled, you can simply delete this plugin now."
+"Clicking the button will install and activate the ThemeGrill demo importer "
+"plugin."
 msgstr ""
 
 #: inc/admin/meta-boxes.php:16 inc/admin/meta-boxes.php:18
@@ -509,6 +222,10 @@ msgstr ""
 
 #: inc/admin/meta-boxes.php:48
 msgid "No Sidebar Content Centered"
+msgstr ""
+
+#: inc/customizer.php:56
+msgid "View PRO version"
 msgstr ""
 
 #: inc/customizer.php:67
@@ -659,6 +376,10 @@ msgstr ""
 msgid "Check to hide blog posts/static page on the front page."
 msgstr ""
 
+#: inc/customizer.php:362
+msgid "Site Layout"
+msgstr ""
+
 #: inc/customizer.php:375
 msgid ""
 "Choose the required layout for your site. The change is reflected in the "
@@ -704,6 +425,10 @@ msgid ""
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
+#: inc/customizer.php:465
+msgid "Primary color option"
+msgstr ""
+
 #: inc/customizer.php:476
 msgid ""
 "This will reflect in links and many others. Choose a color to match your "
@@ -724,6 +449,10 @@ msgstr ""
 
 #: inc/customizer.php:510
 msgid "Additional Options"
+msgstr ""
+
+#: inc/customizer.php:516
+msgid "Related Posts"
 msgstr ""
 
 #: inc/customizer.php:528
@@ -748,6 +477,10 @@ msgstr ""
 
 #: inc/customizer.php:565
 msgid "Check to enable the lightbox for the featured images in single post."
+msgstr ""
+
+#: inc/customizer.php:574
+msgid "Category Color Options"
 msgstr ""
 
 #: inc/customizer.php:576
@@ -906,375 +639,12 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:40
-msgid "Install Required Plugins"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:328
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:41
-msgid "Install Plugins"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:330
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:43
-#. translators: %s: plugin name.
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:332
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:45
-#. translators: %s: plugin name.
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:46
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:370
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:83
-#. translators: 1: plugin name(s).
-msgid "Begin installing plugin"
-msgid_plural "Begin installing plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:375
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:88
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:380
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:93
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:385
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:98
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:386
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:827
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3580
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:387
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3159
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:99
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:388
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2952
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:100
-msgid "The following plugin was activated successfully:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:390
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:102
-#. translators: 1: plugin name.
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:392
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:104
-#. translators: 1: plugin name.
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:394
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:106
-#. translators: 1: dashboard link.
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:395
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:107
-msgid "Dismiss this notice"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:396
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:108
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
-#: inc/tgm-plugin-activation/tgmpa-colornews.php:109
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:522
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:523
-msgid "Update Required"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1982
-#. translators: %s: version number
-msgid "TGMPA v%s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2273
-msgid "Required"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2276
-msgid "Recommended"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2292
-msgid "WordPress Repository"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2295
-msgid "External Source"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2298
-msgid "Pre-Packaged"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2315
-msgid "Not Installed"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2319
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
-msgid "Active"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2327
-msgid "Required Update not Available"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2330
-msgid "Requires Update"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2392
-#. translators: 1: number of plugins.
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2396
-#. translators: 1: number of plugins.
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
-#. translators: 1: number of plugins.
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2490
-msgid "Installed version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2498
-msgid "Minimum required version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2510
-msgid "Available version:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
-msgid "No plugins to install, update or activate."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2547
-msgid "Plugin"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2548
-msgid "Source"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2549
-msgid "Type"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2553
-msgid "Version"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2554
-msgid "Status"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
-#. translators: %2$s: plugin name in screen reader markup
-msgid "Install %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2608
-#. translators: %2$s: plugin name in screen reader markup
-msgid "Update %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2614
-#. translators: %2$s: plugin name in screen reader markup
-msgid "Activate %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2684
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2717
-msgid "Install"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2723
-msgid "Update"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
-msgid "Activate"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2757
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2759
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2800
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2802
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2908
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2934
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3158
-msgid "Plugin activation failed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3498
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3501
-#. translators: 1: plugin name, 2: error message.
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3503
-#. translators: 1: plugin name.
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3507
-msgid ""
-"The installation and activation process is starting. This process may take "
-"a while on some hosts, so please be patient."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
-#. translators: 1: plugin name.
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3512
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3515
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
-#. translators: 1: plugin name.
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3518
-msgid "All installations have been completed."
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3520
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
 #: inc/widgets/colornews-125x125-advertisement-widget.php:9
 msgid "Add your 125x125 Advertisement here"
+msgstr ""
+
+#: inc/widgets/colornews-125x125-advertisement-widget.php:11
+msgid "TG: 125x125 Advertisement"
 msgstr ""
 
 #: inc/widgets/colornews-125x125-advertisement-widget.php:25
@@ -1323,6 +693,10 @@ msgstr ""
 msgid "Add your 300x250 Advertisement here"
 msgstr ""
 
+#: inc/widgets/colornews-300x250-advertisement-widget.php:14
+msgid "TG: 300x250 Advertisement"
+msgstr ""
+
 #: inc/widgets/colornews-300x250-advertisement-widget.php:34
 msgid "Add your Advertisement 300x250 Image Here"
 msgstr ""
@@ -1339,6 +713,10 @@ msgstr ""
 msgid "Add your 728x90 Advertisement here"
 msgstr ""
 
+#: inc/widgets/colornews-728x90-advertisement-widget.php:14
+msgid "TG: 728x90 Advertisement"
+msgstr ""
+
 #: inc/widgets/colornews-728x90-advertisement-widget.php:35
 msgid "Add your 728x90 Advertisement Image Here"
 msgstr ""
@@ -1353,6 +731,10 @@ msgstr ""
 
 #: inc/widgets/colornews-custom-tag-widget.php:8
 msgid "This widget will display the Custom Tags."
+msgstr ""
+
+#: inc/widgets/colornews-custom-tag-widget.php:10
+msgid "TG: Custom Tag Cloud"
 msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:11
@@ -1406,6 +788,10 @@ msgid ""
 "Page: Slider Area."
 msgstr ""
 
+#: inc/widgets/colornews-featured-post-style-one-widget.php:14
+msgid "TG: Featured Post (Style 1)"
+msgstr ""
+
 #: inc/widgets/colornews-featured-post-style-one-widget.php:107
 msgid " Read More <i class=\"fa fa-angle-double-right\"></i>"
 msgstr ""
@@ -1427,6 +813,10 @@ msgstr ""
 msgid "Displays the popular posts. Suitable for the Right/Left sidebar."
 msgstr ""
 
+#: inc/widgets/colornews-popular-posts-widget.php:14
+msgid "TG: Popular Posts Widget"
+msgstr ""
+
 #: inc/widgets/colornews-popular-posts-widget.php:28
 msgid "Number of popular posts to display:"
 msgstr ""
@@ -1435,6 +825,10 @@ msgstr ""
 msgid ""
 "Displays the random posts from your site. Suitable for the Right/Left "
 "sidebar."
+msgstr ""
+
+#: inc/widgets/colornews-random-posts-widget.php:14
+msgid "TG: Random Posts Widget"
 msgstr ""
 
 #: inc/widgets/colornews-random-posts-widget.php:28
@@ -1553,6 +947,10 @@ msgstr ""
 
 #: searchform.php:11
 msgid "Enter a word for search"
+msgstr ""
+
+#: sidebar-left.php:24 sidebar.php:24
+msgid "Contact Page"
 msgstr ""
 
 #: sidebar-left.php:26
@@ -1699,29 +1097,4 @@ msgstr ""
 #: inc/template-tags.php:121
 msgctxt "post format archive title"
 msgid "Chats"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1121
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2948
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2342
-#. translators: 1: install status, 2: update status
-msgctxt "Install/Update Status"
-msgid "%1$s, %2$s"
-msgstr ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
-#. translators: 1: number of plugins.
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-
-#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2482
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
 msgstr ""

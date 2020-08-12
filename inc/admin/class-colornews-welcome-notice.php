@@ -42,7 +42,7 @@ class ColorNews_Welcome_Notice {
 
 			<div class="colornews-message__content">
 				<div class="colornews-message__image">
-					<img class="colornews-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e( 'ColorNews', 'colornews' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
+					<img class="colornews-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.jpg" alt="<?php esc_html_e( 'ColorNews', 'colornews' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
 				</div>
 
 				<div class="colornews-message__text">
