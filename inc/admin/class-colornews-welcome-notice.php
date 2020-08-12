@@ -2,7 +2,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-class Colornews_Welcome_Notice {
+class ColorNews_Welcome_Notice {
 
 	public function __construct() {
 		add_action( 'wp_loaded', array( $this, 'welcome_notice' ), 20 );
@@ -23,7 +23,7 @@ class Colornews_Welcome_Notice {
 	 *
 	 */
 	public function import_button_html() {
-		$html = '<a class="btn-get-started button button-primary button-hero" href="#" data-name="' . esc_attr( 'themegrill-demo-importer' ) . '" data-slug="' . esc_attr( 'themegrill-demo-importer' ) . '" aria-label="' . esc_attr__( 'Get started with Colornews', 'colornews' ) . '">' . esc_html__( 'Get started with Colornews', 'colornews' ) . '</a>';
+		$html = '<a class="btn-get-started button button-primary button-hero" href="#" data-name="' . esc_attr( 'themegrill-demo-importer' ) . '" data-slug="' . esc_attr( 'themegrill-demo-importer' ) . '" aria-label="' . esc_attr__( 'Get started with ColorNews', 'colornews' ) . '">' . esc_html__( 'Get started with ColorNews', 'colornews' ) . '</a>';
 
 		return $html;
 	}
@@ -43,7 +43,7 @@ class Colornews_Welcome_Notice {
 
 			<div class="colornews-message__content">
 				<div class="colornews-message__image">
-					<img class="colornews-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e( 'Colornews', 'colornews' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
+					<img class="colornews-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e( 'ColorNews', 'colornews' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
 				</div>
 
 				<div class="colornews-message__text">
@@ -51,7 +51,7 @@ class Colornews_Welcome_Notice {
 						<?php
 						printf(
 							/* translators: 1: welcome page link starting html tag, 2: welcome page link ending html tag. */
-							esc_html__( 'Welcome! Thank you for choosing Colornews! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'colornews' ),
+							esc_html__( 'Welcome! Thank you for choosing ColorNews! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'colornews' ),
 							'<a href="' . esc_url( admin_url( 'themes.php?page=colornews-welcome' ) ) . '">',
 							'</a>'
 						);
