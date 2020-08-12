@@ -2,7 +2,7 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
-class Colornews_Notice {
+class ColorNews_Notice {
 	public $name;
 	public $type;
 	public $dismiss_url;
@@ -17,9 +17,6 @@ class Colornews_Notice {
 	 * @param string $type Notice type.
 	 * @param string $dismiss_url Notice permanent dismiss URL.
 	 * @param string $temporary_dismiss_url Notice temporary dismiss URL.
-	 *
-	 * @since 1.2.0
-	 *
 	 */
 	public function __construct( $name, $type, $dismiss_url, $temporary_dismiss_url ) {
 		$this->name                  = $name;
