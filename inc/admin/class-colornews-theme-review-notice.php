@@ -1,9 +1,9 @@
 <?php
 /**
- * Colornews Theme Review Notice Class.
+ * ColorNews Theme Review Notice Class.
  *
  * @author  ThemeGrill
- * @package Colornews
+ * @package ColorNews
  * @since   1.2.1
  */
 
@@ -13,14 +13,14 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Class to display the theme review notice after certain period.
  *
- * Class Colornews_Theme_Review_Notice
+ * Class ColorNews_Theme_Review_Notice
  */
-class Colornews_Theme_Review_Notice {
+class ColorNews_Theme_Review_Notice {
 
 	/**
 	 * Constructor function to include the required functionality for the class.
 	 *
-	 * Colornews_Theme_Review_Notice constructor.
+	 * ColorNews_Theme_Review_Notice constructor.
 	 */
 	public function __construct() {
 		add_action( 'after_setup_theme', array( $this, 'review_notice' ) );
@@ -151,4 +151,4 @@ class Colornews_Theme_Review_Notice {
 	}
 }
 
-new Colornews_Theme_Review_Notice();
+new ColorNews_Theme_Review_Notice();
