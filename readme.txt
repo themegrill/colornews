@@ -47,6 +47,7 @@ and we will include it within the theme from next version update.
 == Changelog ==
 = TBD =
 * Tweak - Add and improve theme-related notices.
+* Remove - TGMPA library to recommend plugins
 
 = Version 1.2.0 2020-07-14 =
 * Enhancement - Gutenberg compatibility.
