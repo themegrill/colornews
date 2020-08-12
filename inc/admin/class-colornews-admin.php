@@ -4,7 +4,7 @@
  *
  * @author  ThemeGrill
  * @package ColorNews
- * Since 1.2.1
+ * @since 1.2.1
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
