@@ -4,7 +4,7 @@
  *
  * @author  ThemeGrill
  * @package Colornews
- * @since   1.2.0
+ * @since   1.2.1
  */
 
 // Exit if accessed directly.
