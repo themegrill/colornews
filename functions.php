@@ -209,20 +209,19 @@ include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 /**
  * Assign the ColorNews version to a variable.
  */
-$theme             = wp_get_theme( 'colornews' );
-$colornews_version = $theme['Version'];
+$colornews_theme = wp_get_theme( 'colornews' );
+
+define( 'COLORNEWS_THEME_VERSION', $colornews_theme->get( 'Version' ) );
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
  */
 if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/class-colornews-admin.php';
-	require get_template_directory() . '/inc/admin/class-colornews-tdi-notice.php';
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-admin.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-dashboard.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-notice.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-welcome-notice.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-upgrade-notice.php' );
+	require( COLORNEWS_ADMIN_DIR . '/class-colornews-theme-review-notice.php' );
 }
 
-/**
- * Load TGMPA Configs.
- */
-require_once( COLORNEWS_INCLUDES_DIR . '/tgm-plugin-activation/class-tgm-plugin-activation.php' );
-require_once( COLORNEWS_INCLUDES_DIR . '/tgm-plugin-activation/tgmpa-colornews.php' );
-?>
