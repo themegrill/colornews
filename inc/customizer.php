@@ -24,7 +24,6 @@ add_action( 'customize_preview_init', 'colornews_customize_preview_js' );
 function colornews_customize_register( $wp_customize ) {
 
 	require COLORNEWS_INCLUDES_DIR . '/customize-controls/class-colornews-upsell-section.php';
-	require COLORNEWS_INCLUDES_DIR . '/customize-controls/class-colornews-custom-css-control.php';
 	require COLORNEWS_INCLUDES_DIR . '/customize-controls/class-colornews-image-radio-control.php';
 
 	// Transport postMessage variable set
@@ -478,28 +477,6 @@ function colornews_customize_register( $wp_customize ) {
 		'settings' => 'colornews_primary_color',
 	) ) );
 
-	// custom CSS setting
-	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
-
-		$wp_customize->add_section( 'colornews_custom_css_setting', array(
-			'priority' => 9,
-			'title'    => __( 'Custom CSS', 'colornews' ),
-			'panel'    => 'colornews_design_options',
-		) );
-
-		$wp_customize->add_setting( 'colornews_custom_css', array(
-			'default'              => '',
-			'capability'           => 'edit_theme_options',
-			'sanitize_callback'    => 'wp_filter_nohtml_kses',
-			'sanitize_js_callback' => 'wp_filter_nohtml_kses',
-		) );
-
-		$wp_customize->add_control( new COLORNEWS_Custom_CSS_Control( $wp_customize, 'colornews_custom_css', array(
-			'label'    => __( 'Write your custom css here and design live.', 'colornews' ),
-			'section'  => 'colornews_custom_css_setting',
-			'settings' => 'colornews_custom_css',
-		) ) );
-	}
 	// End of Design Options
 
 	// Start of the Additional Options
