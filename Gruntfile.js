@@ -1,21 +1,21 @@
 /* jshint node:true */
-module.exports = function( grunt ){
+module.exports = function ( grunt ) {
 	'use strict';
 
-	grunt.initConfig({
+	grunt.initConfig( {
 
 		// Setting folder templates.
-		dirs: {
-			js: 'js',
-			css: 'css'
+		dirs : {
+			js  : 'js',
+			css : 'css'
 		},
 
 		// JavaScript linting with JSHint.
-		jshint: {
-			options: {
-				jshintrc: '.jshintrc'
+		jshint : {
+			options : {
+				jshintrc : '.jshintrc'
 			},
-			all: [
+			all     : [
 				'Gruntfile.js',
 				'<%= dirs.js %>/*.js',
 				'!<%= dirs.js %>/*.min.js',
@@ -29,25 +29,25 @@ module.exports = function( grunt ){
 		},
 
 		// Generate POT files.
-		makepot: {
-			dist: {
-				options: {
-					type: 'wp-theme',
-					domainPath: 'languages',
-					potFilename: 'colornews.pot',
-					potHeaders: {
-						'report-msgid-bugs-to': 'themegrill@gmail.com',
-						'language-team': 'LANGUAGE <EMAIL@ADDRESS>'
+		makepot : {
+			dist : {
+				options : {
+					type        : 'wp-theme',
+					domainPath  : 'languages',
+					potFilename : 'colornews.pot',
+					potHeaders  : {
+						'report-msgid-bugs-to' : 'themegrill@gmail.com',
+						'language-team'        : 'LANGUAGE <EMAIL@ADDRESS>'
 					}
 				}
 			}
 		},
 
 		// Check textdomain errors.
-		checktextdomain: {
-			options: {
-				text_domain: 'colornews',
-				keywords: [
+		checktextdomain : {
+			options : {
+				text_domain : 'colornews',
+				keywords    : [
 					'__:1,2d',
 					'_e:1,2d',
 					'_x:1,2c,3d',
@@ -64,22 +64,32 @@ module.exports = function( grunt ){
 					'_nx_noop:1,2,3c,4d'
 				]
 			},
-			files: {
-				src: [
+			files   : {
+				src    : [
 					'**/*.php',
 					'!node_modules/**'
 				],
-				expand: true
+				expand : true
+			}
+		},
+
+		// Generate all RTL .css files
+		rtlcss: {
+			generate: {
+				expand: true,
+				src: ['./style.css'],
+				dest:'./',
+				ext: '-rtl.css'
 			}
 		},
 
 		// Compress files and folders.
-		compress: {
-			options: {
-				archive: 'dist/colornews.zip'
+		compress : {
+			options : {
+				archive : 'dist/colornews.zip'
 			},
-			files: {
-				src: [
+			files   : {
+				src    : [
 					'**',
 					'!.*',
 					'!*.md',
@@ -89,30 +99,35 @@ module.exports = function( grunt ){
 					'!package.json',
 					'!node_modules/**'
 				],
-				dest: 'colornews',
-				expand: true
+				dest   : 'colornews',
+				expand : true
 			}
 		}
-	});
+	} );
 
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
 	grunt.loadNpmTasks( 'grunt-contrib-compress' );
 	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-rtlcss' );
 
 	// Register tasks
 	grunt.registerTask( 'default', [
 		'jshint'
-	]);
+	] );
 
 	grunt.registerTask( 'dev', [
 		'default',
 		'makepot'
-	]);
+	] );
+
+	grunt.registerTask( 'css', [
+		'rtlcss'
+	] );
 
 	grunt.registerTask( 'zip', [
 		'dev',
 		'compress'
-	]);
+	] );
 };
