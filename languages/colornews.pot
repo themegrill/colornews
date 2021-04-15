@@ -1,14 +1,14 @@
-# Copyright (C) 2020 ThemeGrill
+# Copyright (C) 2021 ThemeGrill
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: ColorNews 1.2.1\n"
+"Project-Id-Version: ColorNews 1.2.3\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-08-12 06:32:24+00:00\n"
+"POT-Creation-Date: 2021-02-24 14:25:54+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -224,274 +224,266 @@ msgstr ""
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:56
+#: inc/customizer.php:55
 msgid "View PRO version"
 msgstr ""
 
-#: inc/customizer.php:67
+#: inc/customizer.php:66
 msgid "Change the Header Settings from here as you want."
 msgstr ""
 
-#: inc/customizer.php:69
+#: inc/customizer.php:68
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:75
+#: inc/customizer.php:74
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:87
+#: inc/customizer.php:86
 msgid "Choose the option that you want from below."
 msgstr ""
 
-#: inc/customizer.php:90
+#: inc/customizer.php:89
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:91
+#: inc/customizer.php:90
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:92
+#: inc/customizer.php:91
 msgid "Show Both"
 msgstr ""
 
-#: inc/customizer.php:93
+#: inc/customizer.php:92
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:99
+#: inc/customizer.php:98
 msgid "Show Home Icon"
 msgstr ""
 
-#: inc/customizer.php:113
+#: inc/customizer.php:112
 msgid "Check to enable the home icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:127
 msgid "Show Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:141
+#: inc/customizer.php:140
 msgid ""
 "Check to enable the header top bar. The top header bar includes category "
 "menu, date display and social menu ."
 msgstr ""
 
-#: inc/customizer.php:155
+#: inc/customizer.php:154
 msgid "Check to enable the category menu in the top header bar."
 msgstr ""
 
-#: inc/customizer.php:162
+#: inc/customizer.php:161
 msgid "Show Date"
 msgstr ""
 
-#: inc/customizer.php:176
+#: inc/customizer.php:175
 msgid "Check to show the date in header."
 msgstr ""
 
-#: inc/customizer.php:198
+#: inc/customizer.php:197
 msgid "Date in header display type:"
 msgstr ""
 
-#: inc/customizer.php:200
+#: inc/customizer.php:199
 msgid "Theme Default Setting"
 msgstr ""
 
-#: inc/customizer.php:201
+#: inc/customizer.php:200
 msgid "From WordPress Date Setting"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:208
 msgid "Search Icon"
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:222
 msgid "Check to display the Search Icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:238
+#: inc/customizer.php:237
 msgid "Random Post"
 msgstr ""
 
-#: inc/customizer.php:251
+#: inc/customizer.php:250
 msgid "Check to display the Random Post Icon in the primary menu."
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:257
 msgid "Breaking News"
 msgstr ""
 
-#: inc/customizer.php:271
+#: inc/customizer.php:270
 msgid "Check to enable the breaking news section."
 msgstr ""
 
-#: inc/customizer.php:278
+#: inc/customizer.php:277
 msgid "Sticky Menu"
 msgstr ""
 
-#: inc/customizer.php:291
+#: inc/customizer.php:290
 msgid "Check to enable the sticky behavior of the primary menu."
 msgstr ""
 
-#: inc/customizer.php:299
+#: inc/customizer.php:298
 msgid "Header Image Position"
 msgstr ""
 
-#: inc/customizer.php:311
+#: inc/customizer.php:310
 msgid "Header image display position."
 msgstr ""
 
-#: inc/customizer.php:314
+#: inc/customizer.php:313
 msgid "Display the Header image just above the site title/text."
 msgstr ""
 
-#: inc/customizer.php:315
+#: inc/customizer.php:314
 msgid ""
 "Default: Display the Header image between site title/text and the "
 "main/primary menu."
 msgstr ""
 
-#: inc/customizer.php:316
+#: inc/customizer.php:315
 msgid "Display the Header image below main/primary menu."
 msgstr ""
 
-#: inc/customizer.php:328
+#: inc/customizer.php:327
 msgid "Check to make header image link back to the home page."
 msgstr ""
 
-#: inc/customizer.php:336
+#: inc/customizer.php:335
 msgid "Change the Design Settings from here as you want for your site."
 msgstr ""
 
-#: inc/customizer.php:338
+#: inc/customizer.php:337
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:344
+#: inc/customizer.php:343
 msgid "Front Page Settings"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:354
 msgid "Check to hide blog posts/static page on the front page."
 msgstr ""
 
-#: inc/customizer.php:362
+#: inc/customizer.php:361
 msgid "Site Layout"
 msgstr ""
 
-#: inc/customizer.php:375
+#: inc/customizer.php:374
 msgid ""
 "Choose the required layout for your site. The change is reflected in the "
 "whole site"
 msgstr ""
 
-#: inc/customizer.php:377
+#: inc/customizer.php:376
 msgid "Boxed Layout"
 msgstr ""
 
-#: inc/customizer.php:378
+#: inc/customizer.php:377
 msgid "Wide Layout"
 msgstr ""
 
-#: inc/customizer.php:386
+#: inc/customizer.php:385
 msgid "Default layout"
 msgstr ""
 
-#: inc/customizer.php:398
+#: inc/customizer.php:397
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options."
 msgstr ""
 
-#: inc/customizer.php:412
+#: inc/customizer.php:411
 msgid "Default layout for pages only"
 msgstr ""
 
-#: inc/customizer.php:424
+#: inc/customizer.php:423
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page."
 msgstr ""
 
-#: inc/customizer.php:438
+#: inc/customizer.php:437
 msgid "Default layout for single posts only"
 msgstr ""
 
-#: inc/customizer.php:450
+#: inc/customizer.php:449
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post."
 msgstr ""
 
-#: inc/customizer.php:465
+#: inc/customizer.php:464
 msgid "Primary color option"
 msgstr ""
 
-#: inc/customizer.php:476
+#: inc/customizer.php:475
 msgid ""
 "This will reflect in links and many others. Choose a color to match your "
 "site."
 msgstr ""
 
-#: inc/customizer.php:486
-msgid "Custom CSS"
-msgstr ""
-
-#: inc/customizer.php:498
-msgid "Write your custom css here and design live."
-msgstr ""
-
-#: inc/customizer.php:508
+#: inc/customizer.php:485
 msgid "Change the Additional Settings from here as you want."
 msgstr ""
 
-#: inc/customizer.php:510
+#: inc/customizer.php:487
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:516
+#: inc/customizer.php:493
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:528
+#: inc/customizer.php:505
 msgid "Check to activate the related posts."
 msgstr ""
 
-#: inc/customizer.php:541
+#: inc/customizer.php:518
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:545
+#: inc/customizer.php:522
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:523
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:553
+#: inc/customizer.php:530
 msgid "Image Lightbox"
 msgstr ""
 
-#: inc/customizer.php:565
+#: inc/customizer.php:542
 msgid "Check to enable the lightbox for the featured images in single post."
 msgstr ""
 
-#: inc/customizer.php:574
+#: inc/customizer.php:551
 msgid "Category Color Options"
 msgstr ""
 
-#: inc/customizer.php:576
+#: inc/customizer.php:553
 msgid "Change the color of each category items as you want for your site."
 msgstr ""
 
-#: inc/customizer.php:581
+#: inc/customizer.php:558
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:603 inc/template-tags.php:91
+#: inc/customizer.php:580 inc/template-tags.php:91
 msgid "%s"
 msgstr ""
 
@@ -503,75 +495,71 @@ msgstr ""
 msgid "View a random post"
 msgstr ""
 
-#: inc/functions.php:455
+#: inc/functions.php:451
 msgid "WordPress"
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "ThemeGrill"
+#: inc/functions.php:455
+msgid "Copyright &copy; %1$s %2$s. All rights reserved."
 msgstr ""
 
-#: inc/functions.php:459
-msgid "Copyright &copy; %1$s %2$s."
-msgstr ""
-
-#: inc/functions.php:459
+#: inc/functions.php:455
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/functions.php:459
+#: inc/functions.php:455
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/functions.php:617
+#: inc/functions.php:616
 msgid "Pingback:"
 msgstr ""
 
-#: inc/functions.php:617
+#: inc/functions.php:616
 msgid "(Edit)"
 msgstr ""
 
-#: inc/functions.php:632
+#: inc/functions.php:631
 msgid "Post author"
 msgstr ""
 
-#: inc/functions.php:635
+#: inc/functions.php:634
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/functions.php:643
+#: inc/functions.php:642
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/functions.php:649
+#: inc/functions.php:648
 msgid "Reply"
 msgstr ""
 
-#: inc/functions.php:674
+#: inc/functions.php:673
 msgid "Posted By: "
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:678
 msgid "<i class=\"fa fa-comment\"></i> 0 Comment"
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:678
 msgid "<i class=\"fa fa-comment\"></i> 1 Comment"
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:678
 msgid "<i class=\"fa fa-comments\"></i> % Comments"
 msgstr ""
 
-#: inc/functions.php:681
+#: inc/functions.php:680
 msgid ", "
 msgstr ""
 
-#: inc/functions.php:686 template-parts/content-page.php:34
+#: inc/functions.php:685 template-parts/content-page.php:34
 msgid "Edit"
 msgstr ""
 
-#: inc/functions.php:711
+#: inc/functions.php:710
 msgid ""
 "<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" "
 "rel=\"bookmark\">%3$s</a></span>"
@@ -1015,6 +1003,10 @@ msgid ""
 "magazine types of site. Got a new magazine site project? This theme will be "
 "an ideal fit. Get free support at https://themegrill.com/support-forum/ and "
 "check the demo at https://demo.themegrill.com/colornews/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeGrill"
 msgstr ""
 
 #. Author URI of the plugin/theme
