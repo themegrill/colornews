@@ -7,7 +7,15 @@ External resources linked to the theme.
   Apache License, version 2.0
 
 Resources packed within the theme.
-* Images on screenshot is from https://pxhere.com/ link. License: Creative Commons Zero (CC0)
+* Images used in the screenshot are licensed under Creative Commons Zero (CC0):
+  
+  https://pxhere.com/en/photo/441950
+  https://pxhere.com/en/photo/891866
+  https://pxhere.com/en/photo/1566397
+  https://pxhere.com/en/photo/441950
+  https://pxhere.com/en/photo/767443
+  https://pxhere.com/en/photo/1184156
+  
 * Font Awesome by Dave Gandy http://fortawesome.github.io/Font-Awesome/
   SIL OFL 1.1 http://scripts.sil.org/OFL.
 * HTML5 Shiv @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
