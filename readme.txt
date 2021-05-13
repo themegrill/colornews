@@ -12,7 +12,6 @@ Resources packed within the theme.
   https://pxhere.com/en/photo/441950
   https://pxhere.com/en/photo/891866
   https://pxhere.com/en/photo/1566397
-  https://pxhere.com/en/photo/441950
   https://pxhere.com/en/photo/767443
   https://pxhere.com/en/photo/1184156
   
