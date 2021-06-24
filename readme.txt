@@ -53,6 +53,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Enhancement - Added 'font-display: swap' CSS property for fonts to ensure better load performance.
+
 = Version 1.2.4 2021-05-14 =
 * Tweak - Update screenshot image.
 * Tweak - Update screenshot image source link.
