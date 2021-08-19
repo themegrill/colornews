@@ -53,7 +53,7 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.5 2021-08-19 =
 * Enhancement - Added CSS font-display property and swap value for better performance.
 
 = Version 1.2.4 2021-05-14 =
