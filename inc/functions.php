@@ -34,6 +34,7 @@ if ( ! function_exists( 'colornews_fonts_url' ) ) {
 			$fonts_url = add_query_arg( array(
 				'family' => urlencode( implode( '|', $fonts ) ),
 				'subset' => urlencode( $subsets ),
+				'display' => 'swap',
 			), '//fonts.googleapis.com/css' );
 		}
 
