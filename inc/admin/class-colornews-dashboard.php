@@ -33,10 +33,16 @@ class ColorNews_Dashboard {
 		/* translators: %s: Theme Name. */
 		$theme_page_name = sprintf( esc_html__( '%s Options', 'colornews' ), $theme->Name );
 
-		$page = add_theme_page( $theme_page_name, $theme_page_name, 'edit_theme_options', 'colornews-options', array(
-			$this,
-			'option_page'
-		) );
+		$page = add_theme_page(
+			$theme_page_name,
+			$theme_page_name,
+			'edit_theme_options',
+			'colornews-options',
+			array(
+				$this,
+				'option_page',
+			)
+		);
 
 	}
 
@@ -85,7 +91,7 @@ class ColorNews_Dashboard {
 						<h3><?php esc_html_e( 'Next Steps', 'colornews' ); ?></h3>
 						<ul>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-media-text">' . esc_html__( 'Documentation', 'colornews' ) . '</a>', esc_url( 'https://docs.themegrill.com/colornews' ) ); ?></li>
-							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'colornews' ) . '</a>', esc_url( 'https://demo.themegrill.com/colornews-demos' ) ); ?></li>
+							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'colornews' ) . '</a>', esc_url( 'https://themegrilldemos.com/colornews-demos' ) ); ?></li>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-migrate">' . esc_html__( 'Premium Version', 'colornews' ) . '</a>', esc_url( 'https://themegrill.com/themes/colornews' ) ); ?></li>
 						</ul>
 					</div>
