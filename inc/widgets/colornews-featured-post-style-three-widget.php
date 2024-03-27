@@ -10,7 +10,10 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 			'classname'   => 'widget_featured_posts_style_three colornews_custom_widget',
 			'description' => __( 'Display latest posts or posts of specific category.', 'colornews' ),
 		);
-		$control_ops = array( 'width' => 200, 'height' => 250 );
+		$control_ops = array(
+			'width'  => 200,
+			'height' => 250,
+		);
 		parent::__construct( false, $name = __( 'TG: Featured Posts (Style 3)', 'colornews' ), $widget_ops );
 	}
 
@@ -25,8 +28,8 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 		$type                    = $instance['type'];
 		$category                = $instance['category'];
 		?>
-		<p><?php _e( 'Layout will be as below:', 'colornews' ) ?></p>
-		<div style="text-align: center;"><img src="<?php echo esc_url( get_template_directory_uri() . '/img/style-3.jpg' ) ?>">
+		<p><?php _e( 'Layout will be as below:', 'colornews' ); ?></p>
+		<div style="text-align: center;"><img src="<?php echo esc_url( get_template_directory_uri() . '/img/style-3.jpg' ); ?>">
 		</div>
 		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'colornews' ); ?></label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
@@ -36,17 +39,22 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 			<input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" size="3" />
 		</p>
 		<p>
-			<input type="radio" <?php checked( $type, 'latest' ) ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="latest" /><?php _e( 'Show latest Posts', 'colornews' ); ?>
+			<input type="radio" <?php checked( $type, 'latest' ); ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="latest" /><?php _e( 'Show latest Posts', 'colornews' ); ?>
 			<br />
-			<input type="radio" <?php checked( $type, 'category' ) ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="category" /><?php _e( 'Show posts from a category', 'colornews' ); ?>
+			<input type="radio" <?php checked( $type, 'category' ); ?> id="<?php echo $this->get_field_id( 'type' ); ?>" name="<?php echo $this->get_field_name( 'type' ); ?>" value="category" /><?php _e( 'Show posts from a category', 'colornews' ); ?>
 			<br /></p>
 		<p><label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Select category', 'colornews' ); ?>
 				:</label>
-			<?php wp_dropdown_categories( array(
-				'show_option_none' => ' ',
-				'name'             => $this->get_field_name( 'category' ),
-				'selected'         => $category,
-			) ); ?></p>
+			<?php
+			wp_dropdown_categories(
+				array(
+					'show_option_none' => ' ',
+					'name'             => $this->get_field_name( 'category' ),
+					'selected'         => $category,
+				)
+			);
+			?>
+			</p>
 		<?php
 	}
 
@@ -71,17 +79,21 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 		$category = isset( $instance['category'] ) ? $instance['category'] : '';
 
 		if ( $type == 'latest' ) {
-			$get_featured_posts = new WP_Query( array(
-				'posts_per_page'      => $number,
-				'post_type'           => 'post',
-				'ignore_sticky_posts' => true,
-			) );
+			$get_featured_posts = new WP_Query(
+				array(
+					'posts_per_page'      => $number,
+					'post_type'           => 'post',
+					'ignore_sticky_posts' => true,
+				)
+			);
 		} else {
-			$get_featured_posts = new WP_Query( array(
-				'posts_per_page' => $number,
-				'post_type'      => 'post',
-				'category__in'   => $category,
-			) );
+			$get_featured_posts = new WP_Query(
+				array(
+					'posts_per_page' => $number,
+					'post_type'      => 'post',
+					'category__in'   => $category,
+				)
+			);
 		}
 		echo $before_widget;
 		?>
@@ -95,22 +107,28 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 				}
 				if ( ! empty( $title ) ) {
 					echo '<h3 class="widget-title title-block-wrap clearfix"><span class="block-title" ' . $background_color . '><span>' . esc_html( $title ) . '</span></span></h3>';
-				} ?>
+				}
+				?>
 				<div class="featured-post-wrapper clearfix">
 					<?php
 					$i = 1;
-					while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post();
+					while ( $get_featured_posts->have_posts() ) :
+						$get_featured_posts->the_post();
 						?>
-						<?php if ( $i == 1 ) {
+						<?php
+						if ( $i == 1 ) {
 							$featured = 'colornews-featured-post-medium';
 						} else {
 							$featured = 'colornews-featured-post-small';
-						} ?>
-						<?php if ( $i == 1 ) {
+						}
+						?>
+						<?php
+						if ( $i == 1 ) {
 							echo '<div class="first-post">';
 						} elseif ( $i == 2 ) {
 							echo '<div class="following-post">';
-						} ?>
+						}
+						?>
 						<div class="single-article clearfix">
 							<?php
 							if ( has_post_thumbnail() ) {
@@ -119,12 +137,16 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 								$image_id        = get_post_thumbnail_id( get_the_ID() );
 								$image_alt       = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 								$image_alt_text  = ! empty( $image_alt ) ? $image_alt : $title_attribute;
-								$image           .= '<figure>';
-								$image           .= '<a href="' . get_permalink() . '" title="' . the_title( '', '', false ) . '">';
-								$image           .= get_the_post_thumbnail( $post->ID, $featured, array(
+								$image          .= '<figure>';
+								$image          .= '<a href="' . get_permalink() . '" title="' . the_title( '', '', false ) . '">';
+								$image          .= get_the_post_thumbnail(
+									$post->ID,
+									$featured,
+									array(
 										'title' => esc_attr( $title_attribute ),
 										'alt'   => esc_attr( $image_alt_text ),
-									) ) . '</a>';
+									)
+								) . '</a>';
 								if ( $i == 1 ) {
 									$image .= colornews_colored_category_return( 0 );
 								}
@@ -140,17 +162,19 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 								<div class="below-entry-meta <?php echo $no_featured_image_extra_class; ?>">
 									<?php
 									$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-									$time_string = sprintf( $time_string,
+									$time_string = sprintf(
+										$time_string,
 										esc_attr( get_the_date( 'c' ) ),
 										esc_html( get_the_date() )
 									);
-									printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colornews' ),
+									printf(
+										__( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colornews' ),
 										esc_url( get_permalink() ),
 										esc_attr( get_the_time() ),
 										$time_string
 									);
 									?>
-									<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span>
+									<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo esc_attr( get_the_author() ); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span>
 									<span class="comments"><i class="fa fa-comment"></i><?php comments_popup_link( '0', '1', '%' ); ?></span>
 								</div>
 								<?php if ( $i == 1 ) { ?>
@@ -163,11 +187,13 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 								<?php } ?>
 							</div>
 						</div>
-						<?php if ( $i == 1 ) {
-							echo '</div>';
-						} ?>
 						<?php
-						$i ++;
+						if ( $i == 1 ) {
+							echo '</div>';
+						}
+						?>
+						<?php
+						++$i;
 					endwhile;
 					if ( $i > 2 ) {
 						echo '</div>';
@@ -178,6 +204,7 @@ class colornews_featured_post_style_three_widget extends WP_Widget {
 				</div>
 			</div>
 		</div>
-		<?php echo $after_widget;
+		<?php
+		echo $after_widget;
 	}
 }
