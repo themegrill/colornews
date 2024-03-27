@@ -53,8 +53,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.7 =
 * Enhancement - General security measures.
+* Tweak - Update WordPress tested upto version to 6.4.
 
 = Version 1.2.6 - 2023-09-19 =
 * Tweak - Update WordPress tested upto version to 6.3.

@@ -1,14 +1,14 @@
-# Copyright (C) 2023 ThemeGrill
+# Copyright (C) 2024 ThemeGrill
 # This file is distributed under the GNU General Public License, version 3 (GPLv3).
 msgid ""
 msgstr ""
-"Project-Id-Version: ColorNews 1.2.6\n"
+"Project-Id-Version: ColorNews 1.2.7\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2023-09-19 05:03:23+00:00\n"
+"POT-Creation-Date: 2024-03-27 11:36:53+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -507,79 +507,79 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: inc/functions.php:354
+#: inc/functions.php:361
 msgid "Breaking News:"
 msgstr ""
 
-#: inc/functions.php:410
+#: inc/functions.php:426
 msgid "View a random post"
 msgstr ""
 
-#: inc/functions.php:452
+#: inc/functions.php:468
 msgid "WordPress"
 msgstr ""
 
-#: inc/functions.php:456
+#: inc/functions.php:472
 msgid "Copyright &copy; %1$s %2$s. All rights reserved."
 msgstr ""
 
-#: inc/functions.php:456
+#: inc/functions.php:472
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: inc/functions.php:456
+#: inc/functions.php:472
 msgid "Powered by %s."
 msgstr ""
 
-#: inc/functions.php:617
+#: inc/functions.php:633
 msgid "Pingback:"
 msgstr ""
 
-#: inc/functions.php:617
+#: inc/functions.php:633
 msgid "(Edit)"
 msgstr ""
 
-#: inc/functions.php:632
+#: inc/functions.php:649
 msgid "Post author"
 msgstr ""
 
-#: inc/functions.php:635
+#: inc/functions.php:653
 msgid "%1$s at %2$s"
 msgstr ""
 
-#: inc/functions.php:643
+#: inc/functions.php:661
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/functions.php:649
+#: inc/functions.php:671
 msgid "Reply"
 msgstr ""
 
-#: inc/functions.php:674
+#: inc/functions.php:701
 msgid "Posted By: "
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:709
 msgid "<i class=\"fa fa-comment\"></i> 0 Comment"
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:709
 msgid "<i class=\"fa fa-comment\"></i> 1 Comment"
 msgstr ""
 
-#: inc/functions.php:679
+#: inc/functions.php:709
 msgid "<i class=\"fa fa-comments\"></i> % Comments"
 msgstr ""
 
-#: inc/functions.php:681
+#: inc/functions.php:712
 msgid ", "
 msgstr ""
 
-#: inc/functions.php:686 template-parts/content-page.php:34
+#: inc/functions.php:717 template-parts/content-page.php:34
 msgid "Edit"
 msgstr ""
 
-#: inc/functions.php:711
+#: inc/functions.php:744
 msgid ""
 "<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" "
 "rel=\"bookmark\">%3$s</a></span>"
@@ -589,10 +589,10 @@ msgstr ""
 msgid "You May Also Like"
 msgstr ""
 
-#: inc/related-posts.php:38
-#: inc/widgets/colornews-featured-post-style-three-widget.php:147
-#: inc/widgets/colornews-featured-post-style-two-widget.php:148
-#: inc/widgets/colornews-popular-posts-widget.php:103
+#: inc/related-posts.php:43
+#: inc/widgets/colornews-featured-post-style-three-widget.php:171
+#: inc/widgets/colornews-featured-post-style-two-widget.php:172
+#: inc/widgets/colornews-popular-posts-widget.php:116
 msgid ""
 "<span class=\"posted-on\"><a href=\"%1$s\" title=\"%2$s\" "
 "rel=\"bookmark\"><i class=\"fa fa-calendar-o\"></i> %3$s</a></span>"
@@ -660,9 +660,9 @@ msgstr ""
 #: inc/widgets/colornews-728x90-advertisement-widget.php:32
 #: inc/widgets/colornews-custom-tag-widget.php:17
 #: inc/widgets/colornews-featured-post-style-four-widget.php:31
-#: inc/widgets/colornews-featured-post-style-three-widget.php:31
-#: inc/widgets/colornews-featured-post-style-two-widget.php:31
-#: inc/widgets/colornews-popular-posts-widget.php:24
+#: inc/widgets/colornews-featured-post-style-three-widget.php:34
+#: inc/widgets/colornews-featured-post-style-two-widget.php:34
+#: inc/widgets/colornews-popular-posts-widget.php:27
 #: inc/widgets/colornews-random-posts-widget.php:24
 msgid "Title:"
 msgstr ""
@@ -757,36 +757,36 @@ msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:28
 #: inc/widgets/colornews-featured-post-style-one-widget.php:26
-#: inc/widgets/colornews-featured-post-style-three-widget.php:28
-#: inc/widgets/colornews-featured-post-style-two-widget.php:28
+#: inc/widgets/colornews-featured-post-style-three-widget.php:31
+#: inc/widgets/colornews-featured-post-style-two-widget.php:31
 msgid "Layout will be as below:"
 msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:35
 #: inc/widgets/colornews-featured-post-style-one-widget.php:30
-#: inc/widgets/colornews-featured-post-style-three-widget.php:35
-#: inc/widgets/colornews-featured-post-style-two-widget.php:35
+#: inc/widgets/colornews-featured-post-style-three-widget.php:38
+#: inc/widgets/colornews-featured-post-style-two-widget.php:38
 msgid "Number of posts to display:"
 msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:39
 #: inc/widgets/colornews-featured-post-style-one-widget.php:34
-#: inc/widgets/colornews-featured-post-style-three-widget.php:39
-#: inc/widgets/colornews-featured-post-style-two-widget.php:39
+#: inc/widgets/colornews-featured-post-style-three-widget.php:42
+#: inc/widgets/colornews-featured-post-style-two-widget.php:42
 msgid "Show latest Posts"
 msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:41
 #: inc/widgets/colornews-featured-post-style-one-widget.php:36
-#: inc/widgets/colornews-featured-post-style-three-widget.php:41
-#: inc/widgets/colornews-featured-post-style-two-widget.php:41
+#: inc/widgets/colornews-featured-post-style-three-widget.php:44
+#: inc/widgets/colornews-featured-post-style-two-widget.php:44
 msgid "Show posts from a category"
 msgstr ""
 
 #: inc/widgets/colornews-featured-post-style-four-widget.php:43
 #: inc/widgets/colornews-featured-post-style-one-widget.php:38
-#: inc/widgets/colornews-featured-post-style-three-widget.php:43
-#: inc/widgets/colornews-featured-post-style-two-widget.php:43
+#: inc/widgets/colornews-featured-post-style-three-widget.php:46
+#: inc/widgets/colornews-featured-post-style-two-widget.php:46
 msgid "Select category"
 msgstr ""
 
@@ -804,16 +804,16 @@ msgstr ""
 msgid " Read More <i class=\"fa fa-angle-double-right\"></i>"
 msgstr ""
 
-#: inc/widgets/colornews-featured-post-style-three-widget.php:14
+#: inc/widgets/colornews-featured-post-style-three-widget.php:17
 msgid "TG: Featured Posts (Style 3)"
 msgstr ""
 
-#: inc/widgets/colornews-featured-post-style-three-widget.php:161
-#: inc/widgets/colornews-featured-post-style-two-widget.php:162
+#: inc/widgets/colornews-featured-post-style-three-widget.php:185
+#: inc/widgets/colornews-featured-post-style-two-widget.php:186
 msgid "Read More <i class=\"fa fa-angle-double-right\"></i>"
 msgstr ""
 
-#: inc/widgets/colornews-featured-post-style-two-widget.php:14
+#: inc/widgets/colornews-featured-post-style-two-widget.php:17
 msgid "TG: Featured Posts (Style 2)"
 msgstr ""
 
@@ -821,11 +821,11 @@ msgstr ""
 msgid "Displays the popular posts. Suitable for the Right/Left sidebar."
 msgstr ""
 
-#: inc/widgets/colornews-popular-posts-widget.php:14
+#: inc/widgets/colornews-popular-posts-widget.php:17
 msgid "TG: Popular Posts Widget"
 msgstr ""
 
-#: inc/widgets/colornews-popular-posts-widget.php:28
+#: inc/widgets/colornews-popular-posts-widget.php:31
 msgid "Number of popular posts to display:"
 msgstr ""
 
