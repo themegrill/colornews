@@ -10,7 +10,10 @@ class colornews_popular_posts_widget extends WP_Widget {
 			'classname'   => 'colornews_popular_post colornews_custom_widget',
 			'description' => __( 'Displays the popular posts. Suitable for the Right/Left sidebar.', 'colornews' ),
 		);
-		$control_ops = array( 'width' => 200, 'height' => 250 );
+		$control_ops = array(
+			'width'  => 200,
+			'height' => 250,
+		);
 		parent::__construct( false, $name = __( 'TG: Popular Posts Widget', 'colornews' ), $widget_ops );
 	}
 
@@ -53,22 +56,26 @@ class colornews_popular_posts_widget extends WP_Widget {
 				<?php
 				global $post;
 
-				$get_featured_posts = new WP_Query( array(
-					'posts_per_page'      => $number,
-					'post_type'           => 'post',
-					'ignore_sticky_posts' => true,
-					'orderby'             => 'comment_count',
-				) );
+				$get_featured_posts = new WP_Query(
+					array(
+						'posts_per_page'      => $number,
+						'post_type'           => 'post',
+						'ignore_sticky_posts' => true,
+						'orderby'             => 'comment_count',
+					)
+				);
 				?>
 				<?php $featured = 'colornews-featured-post-small'; ?>
 				<?php
 				if ( ! empty( $title ) ) {
 					echo $before_title . esc_html( $title ) . $after_title;
-				} ?>
+				}
+				?>
 				<div class="following-post">
 					<?php
 					$i = 1;
-					while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post();
+					while ( $get_featured_posts->have_posts() ) :
+						$get_featured_posts->the_post();
 						?>
 						<div class="single-article clearfix">
 							<?php
@@ -78,13 +85,17 @@ class colornews_popular_posts_widget extends WP_Widget {
 								$image_id        = get_post_thumbnail_id( get_the_ID() );
 								$image_alt       = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 								$image_alt_text  = ! empty( $image_alt ) ? $image_alt : $title_attribute;
-								$image           .= '<figure>';
-								$image           .= '<a href="' . get_permalink() . '" title="' . the_title( '', '', false ) . '">';
-								$image           .= get_the_post_thumbnail( $post->ID, $featured, array(
+								$image          .= '<figure>';
+								$image          .= '<a href="' . get_permalink() . '" title="' . the_title( '', '', false ) . '">';
+								$image          .= get_the_post_thumbnail(
+									$post->ID,
+									$featured,
+									array(
 										'title' => esc_attr( $title_attribute ),
 										'alt'   => esc_attr( $image_alt_text ),
-									) ) . '</a>';
-								$image           .= '</figure>';
+									)
+								) . '</a>';
+								$image          .= '</figure>';
 								echo $image;
 							}
 							?>
@@ -96,23 +107,25 @@ class colornews_popular_posts_widget extends WP_Widget {
 								<div class="below-entry-meta <?php echo $no_featured_image_extra_class; ?>">
 									<?php
 									$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-									$time_string = sprintf( $time_string,
+									$time_string = sprintf(
+										$time_string,
 										esc_attr( get_the_date( 'c' ) ),
 										esc_html( get_the_date() )
 									);
-									printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colornews' ),
+									printf(
+										__( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark"><i class="fa fa-calendar-o"></i> %3$s</a></span>', 'colornews' ),
 										esc_url( get_permalink() ),
 										esc_attr( get_the_time() ),
 										$time_string
 									);
 									?>
-									<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span>
+									<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo esc_attr( get_the_author() ); ?>"><?php echo esc_html( get_the_author() ); ?></a></span></span>
 									<span class="comments"><i class="fa fa-comment"></i><?php comments_popup_link( '0', '1', '%' ); ?></span>
 								</div>
 							</div>
 						</div>
 						<?php
-						$i ++;
+						++$i;
 					endwhile;
 					// Reset Post Data
 					wp_reset_query();
@@ -120,7 +133,8 @@ class colornews_popular_posts_widget extends WP_Widget {
 				</div>
 			</div>
 		</div>
-		<?php echo $after_widget;
+		<?php
+		echo $after_widget;
 	}
 }
 

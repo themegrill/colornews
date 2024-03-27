@@ -31,11 +31,14 @@ if ( ! function_exists( 'colornews_fonts_url' ) ) {
 
 		// ready to enqueue Google Font
 		if ( $fonts ) {
-			$fonts_url = add_query_arg( array(
-				'family' => urlencode( implode( '|', $fonts ) ),
-				'subset' => urlencode( $subsets ),
-				'display' => 'swap',
-			), '//fonts.googleapis.com/css' );
+			$fonts_url = add_query_arg(
+				array(
+					'family'  => urlencode( implode( '|', $fonts ) ),
+					'subset'  => urlencode( $subsets ),
+					'display' => 'swap',
+				),
+				'//fonts.googleapis.com/css'
+			);
 		}
 
 		return $fonts_url;
@@ -130,7 +133,7 @@ function colornews_continue_reading() {
 /****************************************************************************************/
 
 /**
- * Removing the default style of wordpress gallery
+ * Removing the default style of WordPress gallery
  */
 add_filter( 'use_default_gallery_style', '__return_false' );
 
@@ -138,14 +141,16 @@ add_filter( 'use_default_gallery_style', '__return_false' );
  * Filtering the size to be full from thumbnail to be used in WordPress gallery as a default size
  */
 function colornews_gallery_atts( $out, $pairs, $atts ) {
-	$atts = shortcode_atts( array(
-		'size' => 'colornews-featured-image',
-	), $atts );
+	$atts = shortcode_atts(
+		array(
+			'size' => 'colornews-featured-image',
+		),
+		$atts
+	);
 
 	$out['size'] = $atts['size'];
 
 	return $out;
-
 }
 
 add_filter( 'shortcode_atts_gallery', 'colornews_gallery_atts', 10, 3 );
@@ -341,11 +346,13 @@ endif;
  */
 if ( ! function_exists( 'colornews_breaking_news' ) ) :
 	function colornews_breaking_news() {
-		$get_featured_posts = new WP_Query( array(
-			'posts_per_page'      => 5,
-			'post_type'           => 'post',
-			'ignore_sticky_posts' => true,
-		) );
+		$get_featured_posts = new WP_Query(
+			array(
+				'posts_per_page'      => 5,
+				'post_type'           => 'post',
+				'ignore_sticky_posts' => true,
+			)
+		);
 		?>
 		<div id="breaking-news" class="clearfix">
 			<div class="tg-container">
@@ -353,7 +360,10 @@ if ( ! function_exists( 'colornews_breaking_news' ) ) :
 					<div class="breaking-news-wrapper clearfix">
 						<div class="breaking-news-title"><?php _e( 'Breaking News:', 'colornews' ); ?></div>
 						<ul id="typing">
-							<?php while ( $get_featured_posts->have_posts() ):$get_featured_posts->the_post(); ?>
+							<?php
+							while ( $get_featured_posts->have_posts() ) :
+								$get_featured_posts->the_post();
+								?>
 								<li>
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 								</li>
@@ -376,7 +386,8 @@ endif;
  */
 if ( ! function_exists( 'colornews_date_display' ) ) :
 	function colornews_date_display() {
-		if ( get_theme_mod( 'colornews_date_display', 0 ) == 1 ) { ?>
+		if ( get_theme_mod( 'colornews_date_display', 0 ) == 1 ) {
+			?>
 			<div class="date-in-header">
 				<?php
 				if ( get_theme_mod( 'colornews_date_display_type', 'theme_default' ) == 'theme_default' ) {
@@ -398,15 +409,20 @@ endif;
  */
 if ( ! function_exists( 'colornews_random_post' ) ) :
 	function colornews_random_post() {
-		$get_random_post = new WP_Query( array(
-			'posts_per_page'      => 1,
-			'post_type'           => 'post',
-			'ignore_sticky_posts' => true,
-			'orderby'             => 'rand',
-		) );
+		$get_random_post = new WP_Query(
+			array(
+				'posts_per_page'      => 1,
+				'post_type'           => 'post',
+				'ignore_sticky_posts' => true,
+				'orderby'             => 'rand',
+			)
+		);
 		?>
 		<div class="random-post share-wrap">
-			<?php while ( $get_random_post->have_posts() ):$get_random_post->the_post(); ?>
+			<?php
+			while ( $get_random_post->have_posts() ) :
+				$get_random_post->the_post();
+				?>
 				<a href="<?php the_permalink(); ?>" title="<?php _e( 'View a random post', 'colornews' ); ?>" class="share-icon"><i class="fa fa-random"></i></a>
 			<?php endwhile; ?>
 		</div><!-- .random-post.share-wrap end -->
@@ -432,9 +448,9 @@ function colornews_custom_css() {
 	if ( ! empty( $colornews_internal_css ) ) {
 		echo '<!-- ' . get_bloginfo( 'name' ) . ' Internal Styles -->';
 		?>
-		<style type="text/css"><?php echo $colornews_internal_css; ?></style><?php
+		<style type="text/css"><?php echo $colornews_internal_css; ?></style>
+											<?php
 	}
-
 }
 
 /**************************************************************************************/
@@ -458,7 +474,6 @@ if ( ! function_exists( 'colornews_footer_copyright' ) ) :
 		$colornews_footer_copyright = '<div class="copy-right">' . $default_footer_value . '</div>';
 
 		echo $colornews_footer_copyright;
-
 	}
 
 endif;
@@ -503,7 +518,8 @@ if ( ! function_exists( 'colornews_render_header_image' ) ) :
 		} else {
 			$header_image = get_header_image();
 			if ( ! empty( $header_image ) ) {
-				if ( get_theme_mod( 'colornews_header_image_link', 0 ) == 1 ) { ?>
+				if ( get_theme_mod( 'colornews_header_image_link', 0 ) == 1 ) {
+					?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<?php } ?>
 				<div class="header-image-wrap">
@@ -567,7 +583,7 @@ if ( ! function_exists( 'colornews_related_posts_function' ) ) {
 			}
 		}
 
-		$query = ! isset( $break ) ? new WP_Query( $args ) : new WP_Query;
+		$query = ! isset( $break ) ? new WP_Query( $args ) : new WP_Query();
 
 		return $query;
 	}
@@ -609,15 +625,15 @@ if ( ! function_exists( 'colornews_comment' ) ) :
 	function colornews_comment( $comment, $args, $depth ) {
 		$GLOBALS['comment'] = $comment;
 		switch ( $comment->comment_type ) :
-			case 'pingback' :
-			case 'trackback' :
-// Display trackbacks differently than normal comments.
+			case 'pingback':
+			case 'trackback':
+				// Display trackbacks differently than normal comments.
 				?>
 				<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 				<p><?php _e( 'Pingback:', 'colornews' ); ?><?php comment_author_link(); ?><?php edit_comment_link( __( '(Edit)', 'colornews' ), '<span class="edit-link">', '</span>' ); ?></p>
 				<?php
 				break;
-			default :
+			default:
 				// Proceed with normal comments.
 				global $post;
 				?>
@@ -626,12 +642,14 @@ if ( ! function_exists( 'colornews_comment' ) ) :
 					<header class="comment-meta comment-author vcard">
 						<?php
 						echo get_avatar( $comment, 74 );
-						printf( '<div class="comment-author-link"><i class="fa fa-user"></i>%1$s%2$s</div>',
+						printf(
+							'<div class="comment-author-link"><i class="fa fa-user"></i>%1$s%2$s</div>',
 							get_comment_author_link(),
 							// If current post author is also comment author, make it known visually.
 							( $comment->user_id === $post->post_author ) ? '<span>' . __( 'Post author', 'colornews' ) . '</span>' : ''
 						);
-						printf( '<div class="comment-date-time"><i class="fa fa-calendar-o"></i>%1$s</div>',
+						printf(
+							'<div class="comment-date-time"><i class="fa fa-calendar-o"></i>%1$s</div>',
 							sprintf( __( '%1$s at %2$s', 'colornews' ), get_comment_date(), get_comment_time() )
 						);
 						printf( '<a class="comment-permalink" href="%1$s"><i class="fa fa-link"></i>Permalink</a>', esc_url( get_comment_link( $comment->comment_ID ) ) );
@@ -645,12 +663,19 @@ if ( ! function_exists( 'colornews_comment' ) ) :
 
 					<section class="comment-content comment">
 						<?php comment_text(); ?>
-						<?php comment_reply_link( array_merge( $args, array(
-							'reply_text' => __( 'Reply', 'colornews' ),
-							'after'      => '',
-							'depth'      => $depth,
-							'max_depth'  => $args['max_depth'],
-						) ) ); ?>
+						<?php
+						comment_reply_link(
+							array_merge(
+								$args,
+								array(
+									'reply_text' => __( 'Reply', 'colornews' ),
+									'after'      => '',
+									'depth'      => $depth,
+									'max_depth'  => $args['max_depth'],
+								)
+							)
+						);
+						?>
 					</section><!-- .comment-content -->
 
 				</article><!-- #comment-## -->
@@ -671,13 +696,19 @@ if ( ! function_exists( 'colornews_entry_meta' ) ) :
 			echo '<div class="below-entry-meta">';
 			?>
 
-			<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo get_the_author(); ?>"><?php _e( 'Posted By: ', 'colornews' );
-						echo esc_html( get_the_author() ); ?></a></span></span>
+			<span class="byline"><span class="author vcard"><i class="fa fa-user"></i><a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo esc_attr( get_the_author() ); ?>">
+																															<?php
+																															_e( 'Posted By: ', 'colornews' );
+																															echo esc_html( get_the_author() );
+																															?>
+						</a></span></span>
 
 			<?php
-			if ( ! post_password_required() && comments_open() ) { ?>
+			if ( ! post_password_required() && comments_open() ) {
+				?>
 				<span class="comments"><?php comments_popup_link( __( '<i class="fa fa-comment"></i> 0 Comment', 'colornews' ), __( '<i class="fa fa-comment"></i> 1 Comment', 'colornews' ), __( '<i class="fa fa-comments"></i> % Comments', 'colornews' ) ); ?></span>
-			<?php }
+				<?php
+			}
 			$tags_list = get_the_tag_list( '<span class="tag-links"><i class="fa fa-tags"></i>', __( ', ', 'colornews' ), '</span>' );
 			if ( $tags_list ) {
 				echo $tags_list;
@@ -702,13 +733,15 @@ if ( ! function_exists( 'colornews_published_date' ) ) :
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 			$time_string .= '<time class="updated" datetime="%3$s">%4$s</time>';
 		}
-		$time_string = sprintf( $time_string,
+		$time_string = sprintf(
+			$time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() ),
 			esc_attr( get_the_modified_date( 'c' ) ),
 			esc_html( get_the_modified_date() )
 		);
-		printf( __( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark">%3$s</a></span>', 'colornews' ),
+		printf(
+			__( '<span class="posted-on"><a href="%1$s" title="%2$s" rel="bookmark">%3$s</a></span>', 'colornews' ),
 			esc_url( get_permalink() ),
 			esc_attr( get_the_time() ),
 			$time_string
