@@ -53,6 +53,9 @@ and we will include it within the theme from next version update.
 /**********************************************************/
 
 == Changelog ==
+= Version 1.2.8 - 2025-08-12 =
+* Update - General security measure.
+
 = Version 1.2.7 - 2024-03-27 =
 * Enhancement - General security measures.
 * Tweak - Update WordPress tested upto version to 6.4.
